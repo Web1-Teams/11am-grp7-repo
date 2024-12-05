@@ -1,0 +1,68 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ }
+ 
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #000000;
+    height: 80px;
+ }
+ .logo {
+    height: 80px;
+    width: 130px;
+ }
+ 
+ .navlinks li {
+    display: inline-block;
+    padding: 0 20px;
+ }
+ .navlinks li a {
+    position: relative;
+    color: #e3d6b4;
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+ }
+ 
+ .navlinks li a:hover {
+    color: #C7ae6a;
+    transition: all 0.3s ease 0s;
+ }
+ 
+ .navlinks a::after {
+    content: '';
+    height: 4px;
+    width: 0;
+    background-color: #C7ae6a;
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    transition: all 0.3s ease 0s;
+    pointer-events: none;
+ }
+ .navlinks a:hover::after{
+    width: 100%;
+    transition: all 0.3s ease 0s;
+ }
+ 
+ .signin button {
+    padding: 9px 25px;
+    cursor: pointer;
+    border: none;
+    background-color: #000000;
+    color: #C7ae6a;
+    border-radius: 10px;
+    transition: all 0.5s ease 0s;
+    font-weight: bold;
+    font-size: 16px;
+ }
+ .signin button:hover {
+    color: #000000;
+    background-color: #C7ae6a;
+    transition: all 0.5s ease 0s;
+ }
