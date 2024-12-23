@@ -6,8 +6,97 @@
 }
 
 
+/* General styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.dark-mode {
+    background-color: gray;
+    color:#FFFFFF ;
+}
+
+/* Header, Footer, About section styles */
+header, footer {
+    background: linear-gradient(360deg, #FFFFFF 0%, #e6e6e6 100%);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+header.dark-mode, footer.dark-mode {
+    background: linear-gradient(360deg, rgb(192, 184, 184) 0%, rgba(135, 132, 132, 0.4) 100%);
+}
+
+
+.about.dark-mode {
+    background: linear-gradient(360deg, rgb(192, 184, 184) 0%,rgba(135, 132, 132, 0.4) 100%);
+}
+
+/* .about h2, .about h3 {
+    margin: 20px 0;
+} */
+
+/* Scroll-to-top button */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #854F6C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Theme switcher */
+#themeSwitcher {
+    position:fixed; 
+    top: 10px;
+    right: -20px; 
+    width: 30px; 
+    height: 30px;
+    background-color: #854F6C;
+    color: white; 
+    border: none;
+    border-radius: 50%;
+    padding: 0; 
+    font-size: 1.5rem; 
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 100000;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect */
+#themeSwitcher:hover {
+    background-color:#DFB6B2; 
+}
+
+
+/* Explore Now button hover effect */
+#Explore {
+    background-color:#854F6C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#Explore.hover {
+    transform: scale(1.1);
+    background-color: #DFB6B2;
 }
 
 /* Header */
@@ -34,9 +123,10 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color:#C7ae6a;
-    ;
+    color:#854F6C;
+    
 }
+
 
 .nav-links {
     list-style: none;
@@ -55,19 +145,33 @@ nav {
 }
 
 .nav-links a:hover {
-    background-color: #C7ae6a;
+    background-color:#854F6C;
     border-radius: 4px;
     color: white;
 }
 
 /* About Section */
 
-.about {
+/* .about {
     background: rgb(224, 251, 222);
     background: linear-gradient(360deg, #fffff5 0%, #fcf5a3 100%);
     padding: 150px 0px 0px 0px;
     text-align: center;
+} */
+
+.about {
+    background: linear-gradient(360deg, #fffff5 0%,#DFB6B2 100%);
+    padding: 150px 0;
+    text-align: center;
+    transition: all 0.3s ease;
 }
+
+
+.about hr, header hr, footer hr {
+    border: 1px solid #000; 
+    color: #fffff5;
+}
+
 
 .about h1 {
     font-size: 2.5rem;
@@ -118,21 +222,25 @@ nav {
 }
 
 button {
-    border: none;
+   border: none;
     outline: 0;
     padding: 10px;
     margin: 2rem;
     font-size: 1rem;
     color: white;
-    background-color: #C7ae6a;
+    background-color: #854F6C;
     text-align: center;
     cursor: pointer;
     width: 15rem;
     border-radius: 4px;
+
+
+
+   
 }
 
 button:hover {
-    background-color: #edd697;
+    background-color: #DFB6B2;
 }
 
 /* Goals Section */
@@ -330,6 +438,6 @@ footer {
     text-align: center;
     line-height: 0.6;
     font-size: 1.5rem;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;
 }
+

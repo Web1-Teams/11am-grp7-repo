@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="about_us.css">
-
+    
 </head>
 
    <body>
@@ -13,8 +13,7 @@
             <nav>
                 <div class="logo">
                     IGDB 
-                    
-                  </div>
+                </div>
                 <ul class="nav-links">
                     <li><a href="index.html">
                       Home</a>
@@ -29,10 +28,11 @@
                         Contact Us</a>
                       </li>
                 </ul>
-
-                <a class="signin" href="signin.html"><button>Sign in</button></a>
-
-        
+                <!-- <a class="signin" href="signin.html"><button>Sign in</button></a> -->
+                <div class="header-buttons">
+                    <button id="themeSwitcher">🌙</button>
+                    <button class="sign-in">Sign in</button>
+                </div>
             </nav>
         </header>
     
@@ -50,27 +50,22 @@
                 <p>
                     We offer honest and unbiased video game reviews to help you make better gaming choices. Whether you're new to gaming or a seasoned pro, our goal is to create a community where players can share opinions and insights.
                 </p>
-                <h3> Ready to level up your gaming knowledge?</h3>
-
-                    <button>Explore Now</button>
+                <h3>Ready to level up your gaming knowledge?</h3>
+                    <button id="Explore">Explore Now</button>
                 </div>
             </div>
         </section>
+        
+        
+        <section class="AI">
+            <h1> AI-Powered Insights <img src="robot.gif" alt="AI-Powered"> </h1>
+            <div class="AI-Powered">
+                <p>Our intelligent system plays and evaluates games to provide you with unique feedback you won’t find anywhere else.
+                <br> Think of it as having a gaming buddy with expert opinions!
+                </p>
+           </div>
+        </section>
 
-
-
-
-
-    <section class="AI">
-     <h1> AI-Powered Insights <img src="robot.gif" alt="AI-Powered"></h1>
-     <div class="AI-Powered">
-        <p>Our intelligent system plays and evaluates games to provide you with unique feedback you won’t find anywhere else.
-        <br> Think of it as having a gaming buddy with expert opinions!
-        </p>
-        <p></p>
-     </div>
-
-    </section>
         <section class="goals">
             <h1>Our Goals  <img src="goals.gif" alt="goal Animation"/> </h1>
             <div class="goals-cards">
@@ -159,8 +154,6 @@
             <p>&copy; 2024 IGDB. All Rights Reserved.</p>
         </footer>
 
-
-
-
-</body>
+     <script src="./about_us.js"></script>
+  </body>
 </html>
