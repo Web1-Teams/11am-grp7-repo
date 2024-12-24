@@ -1,0 +1,125 @@
+.left-right-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container{
+    width: calc(100% - 120pX);
+    margin: auto;
+  }
+  footer{
+    display: flex;
+   background-color: #000000;
+    width: 100%;
+    padding: 100px 162px 30px 62px;
+    margin-top:80px;
+   
+    box-shadow: 0 -5px 15px #c6991e; 
+    
+  }
+  .left-side{
+    display: flex;
+    flex-direction: column;
+  margin-bottom: 100px;
+  }
+  .left-side img{
+    width: 150px;
+    height: 150px;
+  
+  
+  }
+  
+    
+    .contact{
+     display: flex;
+    gap: 20px;
+    flex-direction: column;
+    }
+  
+    .contact .icons{
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    
+    }
+  
+    .icons span{
+    color:  #d2cdcd;
+    font-family: Be Vietnam Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  
+    }
+    .icons i{
+      font-size: 20px;
+      color: #C7AE6A;
+      }
+  
+      .right-side{
+        display: flex;
+        gap: 70px;
+      }
+  
+      .right-side h4{
+        color: var(--Grey-15, #C7AE6A);
+      font-family: Be Vietnam Pro;
+      font-size: 20px;
+      font-weight: bold;
+      
+      }
+  
+      .footer-list{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .footer-list ul{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+  
+      .footer-list a{
+        color:  #d2cdcd;
+      font-family: Be Vietnam Pro;
+      font-size: 18px;
+      font-weight: 400;
+      line-height:150% ;
+      }
+  
+      
+  .footer-list .icon{
+    display: flex;
+    gap: 14px;
+  }
+  
+  .icon i{
+   
+    padding: 12px;
+    border-radius: 50%;
+  border: 1px solid  #C7ae6a;
+  background: #C7ae6a;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  }
+  
+  
+  .icon i:hover{
+    background-color:white ;
+    cursor: pointer;
+    transition: 1s;
+    transform: rotate(360deg);
+  
+  
+  }
+  
+  h6{
+    
+    color: #d2cdcd;
+    text-align: center;
+    position: relative;
+    top:20px ;
+  }
