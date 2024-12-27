@@ -2,15 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>sign_in</title>
+    <link rel="stylesheet" href="signin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
-
 <body>
-
-
-
-
-
+   <div class="wrapper">
+     <form action="">
+       <h2>LogIn</h2>
+          <div class="in_put_box">
+             <input type="text" placeholder="username" required>
+             <i class='bx bx-user'></i>          </div>
+          <div class="in_put_box">
+            <input type="password" placeholder="password" required>
+            <i class='bx bxs-lock-alt' ></i>         </div>
+          <div class="remember_forget">
+             <lable>
+                <input type="checkbox">
+                Remember Me
+             </lable>
+             <a href="#">Forget password ?</a>
+          </div>
+          <button type="submit" class="btn">
+            LogIn
+          </button>
+          <div class="register_link">
+           <p> don't have an account ?
+            <a href="#"> Register</a>
+        </p>
+          </div>
+     </form>
+   </div>
 </body>
 </html>
