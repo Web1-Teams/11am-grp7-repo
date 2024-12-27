@@ -1,9 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 .background {
   position: absolute;
   height: 694px;
   width: 100%;
   top: -40px;
-  margin: 0px;
 }
 
 .box {
@@ -19,9 +25,12 @@
 }
 
 .inside_up {
-  font-size: 27px;
+  margin-top: 15px;
+  font-size: large;
+  padding: 10px 20px;
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 20px;
 }
 
 .inside_mid {
@@ -66,7 +75,7 @@
   border-color: black;
   margin-bottom: 15px;
   margin-top: 5px;
-  width: 330px;
+  width: 300px;
   font-size: 17px;
   cursor: pointer;
   transition: 500ms;
@@ -97,6 +106,7 @@
 }
 
 .inside_down {
+  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: center;
