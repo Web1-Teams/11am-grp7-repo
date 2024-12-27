@@ -1,0 +1,136 @@
+.background {
+  position: absolute;
+  height: 694px;
+  width: 100%;
+  top: -40px;
+  margin: 0px;
+}
+
+.box {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border-style: solid;
+  border-width: 3px;
+  left: 700px;
+  top: 120px;
+  backdrop-filter: blur(10px);
+  border-radius: 11px;
+}
+
+.inside_up {
+  font-size: 27px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.inside_mid {
+  height: 210px;
+  text-align: center;
+}
+.container_1 {
+  position: relative;
+}
+.material-symbols-outlined {
+  position: absolute;
+  left: 310px;
+  top: 10px;
+}
+
+.email {
+  padding: 10px;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 5px;
+  border-color: white;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.password {
+  padding: 10px;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 5px;
+  border-color: white;
+  width: 300px;
+}
+
+.login {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 5px;
+  border-color: black;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  width: 330px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.login:hover {
+  background-color: #c7ae6a;
+  color: black;
+  border-color: #c7ae6a;
+}
+
+.remember {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 0px;
+  width: 100%;
+  gap: 70px;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+}
+.forget {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.inside_down {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.fab.fa-facebook {
+  font-size: 30px;
+  cursor: pointer;
+  transition: 500ms;
+}
+.fab.fa-facebook:hover {
+  font-size: 40px;
+  color: #2775da;
+}
+
+.fab.fa-google {
+  font-size: 30px;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.fab.fa-google:hover {
+  font-size: 40px;
+  color: #ea4335;
+}
+
+.fab.fa-twitter {
+  font-size: 30px;
+  cursor: pointer;
+  transition: 500ms;
+}
+.fab.fa-twitter:hover {
+  color: #1da1f2;
+  font-size: 40px;
+}
