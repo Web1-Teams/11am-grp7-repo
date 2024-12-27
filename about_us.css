@@ -1,0 +1,485 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.dark-mode {
+    background-color: gray;
+    color:#FFFFFF ;
+}
+
+
+/* Header, Footer, About section styles */
+header, footer {
+    background: linear-gradient(360deg, #FFFFFF 0%, #e6e6e6 100%);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+
+
+
+header.dark-mode, footer.dark-mode {
+    background: linear-gradient(360deg, rgb(192, 184, 184) 0%, rgba(135, 132, 132, 0.4) 100%);
+}
+
+
+.about.dark-mode {
+    background: linear-gradient(360deg, rgb(192, 184, 184) 0%,rgba(135, 132, 132, 0.4) 100%);
+}
+
+
+/* Scroll-to-top button */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #854F6C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Theme switcher */
+#themeSwitcher {
+    position:fixed;
+    top: 3px;
+    right: -20px; 
+    width: 36px; 
+    height: 36px;
+    background-color: #854F6C;
+    color: white; 
+    border: none;
+    border-radius: 50%;
+    padding: 0; 
+    font-size: 1.5rem; 
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect */
+#themeSwitcher:hover {
+    background-color:#DFB6B2; 
+}
+
+/* Explore Now button hover effect */
+#Explore {
+    background-color:#854F6C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#Explore.hover {
+    transform: scale(1.1);
+    background-color: #DFB6B2;
+}
+
+/* Header */
+header {
+    position: fixed;
+    left: 0;
+    right: 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    z-index: 100;
+    background-color: #000000;
+    height:min-content;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+header span {
+    position: relative;
+    bottom: -6px;
+   
+}
+
+
+/* Adjust the logo positioning */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #854F6C;
+    margin-right: auto; 
+} 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 0 16px;
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+   
+}
+ 
+.navlinks li {
+    margin-right: 20px;
+    text-decoration: none;
+
+}
+.navlinks li a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+.navlinks li a:hover {
+    color: #854F6C;
+    transition: all 0.3s ease 0s;
+    border-radius: 4px;
+    color: #DFB6B2;
+    text-decoration:underline;
+}
+ 
+.navlinks a::after {
+    content: '';
+    height: 4px;
+    width: 0;
+    background-color: #854F6C;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border-radius: 40px;
+    transition: all 0.3s ease 0s;
+    pointer-events: none;
+}
+.navlinks a:hover::after{
+    width: 100%;
+    transition: all 0.3s ease 0s;
+}
+ 
+.signin button {
+    padding: 9px 25px;
+    cursor: pointer;
+    border: none;
+    background-color:#854F6C;
+    color:white;
+    border-radius: 10px;
+    transition: all 0.5s ease 0s;
+    font-weight: bold;
+    font-size: 16px;
+}
+.signin button:hover {
+    color: #854F6C;
+    background-color: #DFB6B2;
+    transition: all 0.5s ease 0s;
+}
+
+
+.about {
+    background: linear-gradient(360deg, #fffff5 0%,#DFB6B2 100%);
+    padding: 150px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+
+.about hr, header hr, footer hr {
+    border: 1px solid #000; 
+    color: #fffff5;
+
+}
+
+
+
+
+
+.about h1 {
+   
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #323030;
+    max-width: 800px;
+    margin: 0 auto;
+    /* font-weight: bold; */
+}
+.about h2, h3{
+    margin: 10px 30px;
+}
+
+.about h2 img{
+    width: 5rem;
+    height: 3rem;
+    margin: -7px;
+}
+.about-info {
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.about-img {
+    width: 50rem;
+    height: 30rem;
+
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.about-info p {
+    font-size: 1.3rem;
+    margin: 0 2rem;
+    text-align: justify;
+}
+
+button {
+    border: none;
+     outline: 0;
+     padding: 10px;
+     margin: 2rem;
+     font-size: 1rem;
+     color: white;
+     background-color: #854F6C;
+     text-align: center;
+     cursor: pointer;
+     width: 15rem;
+     border-radius: 4px;
+     
+}
+ 
+button:hover {
+     background-color: #DFB6B2;
+}
+ 
+/* Goals Section */
+ 
+.goals {
+     padding: 80px 0;
+     text-align: center;
+}
+ 
+.goals h1 {
+     font-size: 2.5rem;
+     margin-bottom: 20px;
+}
+ 
+.goals h1 img{
+     width: 3rem;
+     height: 3rem;
+     margin: -7px;
+}
+ 
+.goals-cards {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 15px;
+     margin-top: 20px;
+}
+ 
+.card {
+     background-color: white;
+     border-radius: 6px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+     overflow: hidden;
+     transition: transform 0.2s, box-shadow 0.2s;
+     width: 18rem;
+     height: 25rem;
+     margin-top: 10px;
+}
+ 
+.card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+ 
+.card-img {
+     width: 18rem;
+     height: 12rem;
+     
+}
+ 
+.card-img img {
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+}
+ 
+ 
+.card-discribtion {
+     font-size: 1.8rem;
+     color: #555;
+     margin-top: 68px;
+}
+ 
+ /* Footer */
+footer {
+     background-color: #fcf5a3;
+     color: #222;
+     text-align: center;
+     padding: 20px 0;
+}
+    
+ 
+.AI h1 {
+     padding: 30px 0 0;
+     text-align: center;
+     font-size: 2.5rem;
+     margin-bottom: 20px;
+     
+}
+.AI h1 img{
+     width: 3rem;
+     height: 3rem;
+     margin: -7px;
+ }
+.AI .AI-Powered
+{
+     padding: 10px 0;
+     text-align:center;
+     line-height: 1.6;
+     font-size: 1.5rem;
+     
+}
+ 
+.offer h1 {
+     padding: 30px 0 0;
+     text-align: center;
+     font-size: 2.5rem;
+     margin-bottom: 20px;
+     
+}
+
+.offer h1 img{
+     width: 3rem;
+     height: 3rem;
+     margin: -7px;
+ }
+.offer .what-offer 
+ {
+     padding: 10px 0;
+     text-align:center;
+     line-height: 1.6;
+     font-size: 1.5rem;
+ }
+ 
+ 
+.feedback h1 {
+     padding: 80px 0 0;
+     text-align: center;
+     font-size: 2.5rem;
+     margin-bottom: 20px;
+     
+ }
+.feedback h1 img{
+     width: 3rem;
+     height: 3rem;
+     margin: -7px;
+ }
+ 
+.shareContaniar{
+     margin: 2rem 2rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: left;
+     margin-top: -32px;
+ }
+ 
+.answer-share li{
+     padding: 3px;
+     text-align: center;
+     font-size: 1.3rem;
+ }
+ 
+.shareContaniar h2{
+     width: 25rem;
+     height: 0;
+     margin: 7px;
+     padding: 0px;
+     margin-top: 57px;
+ }
+.shareContaniar img{
+     width: 25rem;
+     object-fit: cover;
+     height: 25rem;
+     padding-right: 15px;
+ }
+ 
+ 
+ 
+.reviews h1 {
+     padding: 30px 0 0 ;
+     text-align: center;
+     font-size: 2.5rem;
+     margin-bottom: 20px;
+     
+ }
+.reviews h1 img{
+     width: 3rem;
+     height: 3rem;
+     margin: -7px;
+ }
+.reviews P
+ {
+     padding: 10px 0;
+     text-align: center;
+     line-height: 0.6;
+     font-size: 1.5rem;
+     margin-bottom: 80px;
+ }
+ 
+.the-world h1 {
+     padding: 10px 0;
+     text-align: center;
+     font-size: 2.5rem;
+     margin-bottom: 20px;
+     
+ }
+.the-world h1 img
+{
+     width: 3rem;
+     height: 3rem;
+     margin: -7px;
+ }
+.the-world P
+{
+     padding: 10px 0;
+     text-align: center;
+     line-height: 0.6;
+     font-size: 1.5rem;
+     margin-bottom: 20px;
+ }
