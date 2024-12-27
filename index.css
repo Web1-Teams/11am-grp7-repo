@@ -66,3 +66,97 @@
     background-color: #C7ae6a;
     transition: all 0.5s ease 0s;
  }
+
+ /* Games section */
+ .gamestitle{
+   text-align: center;
+   font-size: 36px;
+   font-weight: 600;
+   color: #C7ae6a;
+   background-color: #000000;
+   padding: 30px;
+
+}
+.games{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap:30px 40px;
+   padding: 20px 200px;
+   background-color: black;
+}
+
+ .games .game {
+   position: relative;
+   height: 300px;
+   width: 230px;
+   border: 2px solid rgba(0,0,0,.5);
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 4px 6px rgba(0,0,0,.1);
+   cursor: pointer;
+   transition: transform  0.3s ease ,box-shadow ease;
+ }
+.games .game:hover{
+   transform: scale(1.15);
+   box-shadow: 0 8px 12px rgba(0,0,0,.2) ;
+   overflow: visible;
+   transform: translateX(-230px);
+}
+
+
+
+.game img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+}
+
+.basicinfo {
+   position: absolute;
+   bottom: 0;
+   left: 230px;
+   color: white;
+   background-color: #000000;
+   /* text-align: center; */
+   width: 100%;
+   /* height: 100%; */
+   /* padding: 10px; */
+   opacity: 0;
+   transition: opacity 0.3s ease;
+   border: 2px solid rgba(240, 0, 0, 0.5);
+   border-radius: 20px;
+}
+.game:hover .basicinfo{
+   opacity: 1;
+}
+.basicinfo h4 {
+   /* background-color:#C7ae6a; */
+   /* border-radius: 20px; */
+   padding: 4px 10px;
+}
+
+.game_name{
+   position: absolute;
+   top:0;
+   left: 230px;
+   width: 100%;
+   height: 100%;
+   padding: 5px 10px;
+   color: white;
+   opacity: 0;
+   text-align: center;
+   transition: opacity 0.3s ease;
+}
+.game:hover .game_name{
+   opacity: 1;
+   transition: opacity 0.3s ease;
+}
+
+.game_name h4 {
+   background-color:rgba(240, 0, 0, 0.5);
+   border-radius: 10px;
+   padding: 5px 10px;
+}
