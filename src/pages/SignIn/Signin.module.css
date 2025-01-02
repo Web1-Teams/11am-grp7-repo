@@ -1,0 +1,177 @@
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border-style: solid;
+  border-width: 3px;
+  top: 70px;
+  left: 400px;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+
+.head_signin {
+  font-weight: 900;
+  color: white;
+  font-size: 35px;
+}
+
+.inside_up {
+  margin-top: 15px;
+  font-size: large;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 20px;
+}
+/*------------------------------------------------------inside mid*/
+.inside_mid {
+  height: 210px;
+  text-align: center;
+}
+
+.container_1,
+.container_2 {
+  position: relative;
+}
+
+.material-symbols-outlined {
+  position: relative;
+  top: 100%;
+  transform: translateY(-50%);
+}
+
+.container_3 {
+  margin-top: 10px;
+}
+
+.email {
+  padding: 10px;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 5px;
+  border-color: white;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.password {
+  padding: 10px;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 5px;
+  border-color: white;
+  width: 300px;
+}
+
+
+.remember {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 0px;
+  width: 100%;
+  gap: 70px;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.forget {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  cursor: pointer;
+}
+.forget:hover{
+  transition: all 0.4s ease 0s;
+  color: #333;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.login {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: black;
+  margin-top: 15px;
+  margin-right: 20px;
+  width: 300px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.login:hover {
+  background-color: yellow;
+  color: black;
+  border-color: yellow;
+}
+/*------------------------------------------------------------ part inside down in box*/
+.inside_down {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.create {
+  font-weight: 900;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.create a {
+  transition: all 0.4s ease 0s;
+  font-weight: 600;
+}
+
+.create a:hover {
+  transition: all 0.4s ease 0s;
+  color: yellow;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/*---------------------------------------------- Notification part */
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+
+.success {
+  background-color: #28a745;
+}
+
+.error {
+  background-color: #dc3545;
+}
+
+.notification.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
