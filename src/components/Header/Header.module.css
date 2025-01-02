@@ -1,0 +1,189 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ }
+ /* Header */
+
+ /* Alzahraa should change the Header Color for
+  each page to a color fits the whole page (Late Step) */
+
+ header.phome {
+   background-color: rgb(3, 118, 218);
+   transition: all 0.3s ease 0s;
+}
+header.paboutus {
+   background-color: rgb(255, 0, 89);
+   transition: all 0.3s ease 0s;
+}
+header.psign{
+   background-color: #000000;
+   transition: all 0.3s ease 0s;
+}
+
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+ }
+header span {
+   position: relative;
+   bottom: -6px;
+}
+
+ .logo {
+    height: 80px;
+    width: 130px;
+ }
+ 
+ .navlinks li {
+    display: inline-block;
+    padding: 0 20px;
+ }
+ .navlinks li a {
+    position: relative;
+    color: #000000;
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+ }
+
+.psign .navlinks li a {
+   position: relative;
+    color: white;
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+}
+
+ .navlinks li a:hover {
+    color: #C7ae6a;
+    transition: all 0.3s ease 0s;
+ }
+
+ .navlinks a::after {
+    content: '';
+    height: 4px;
+    width: 0;
+    background-color: #C7ae6a;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border-radius: 40px;
+    transition: all 0.3s ease 0s;
+    pointer-events: none;
+ }
+
+ .navlinks a:hover::after{
+    width: 100%;
+    transition: all 0.3s ease 0s;
+ }
+ .navlinks li.active a {
+   background-color:floralwhite;
+   color: #000000;
+   font-size: 20px;
+   border-radius: 30px;
+   height: 35px;
+   margin: 10px;
+   padding: 5px 20px;
+   transition: all 0.3s ease 0s; 
+ }
+
+ul{
+   list-style-type: none;
+}
+ .signin button {
+    padding: 6px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #000000;
+    color: #C7ae6a;
+    border-radius: 15px;
+    transition: all 0.5s ease 0s;
+    font-weight: bold;  
+    font-size: 20px;    
+ }
+ .signin button:hover {
+    color: #000000;
+    background-color: #C7ae6a;
+    transition: all 0.5s ease 0s;
+ }
+
+/* Small screens */
+@media screen and (max-width: 768px) {
+   header {
+       padding: 20px 5%;
+       flex-direction: column;
+       height: auto;
+   }
+
+   .navlinks {
+       display: none; /* Hide the navigation links on small screens */
+   }
+
+   .logo {
+       width: 100px;
+       height: 60px;
+   }
+
+   .signin button {
+       font-size: 18px;
+       padding: 8px 18px;
+   }
+
+   header span {
+       font-size: 14px;
+   }
+}
+
+/* Medium screens */
+@media screen and (max-width: 1024px) {
+   header {
+       padding: 20px 10%;
+       flex-direction: row;
+       height: 80px;
+   }
+
+   .navlinks {
+       display: none; /* Hide the navigation links on medium screens */
+   }
+
+   .logo {
+       width: 120px;
+       height: 70px;
+   }
+
+   .signin button {
+       font-size: 18px;
+       padding: 8px 20px;
+   }
+}
+
+/* Large screens */
+@media screen and (min-width: 1025px) {
+   header {
+       padding: 30px 10%;
+       flex-direction: row;
+   }
+
+   .navlinks {
+       display: flex; /* Show the navigation links on large screens */
+       flex-direction: row;
+   }
+
+   .navlinks li {
+       margin: 0 20px;
+   }
+
+   .logo {
+       width: 130px;
+       height: 80px;
+   }
+
+   .signin button {
+       font-size: 20px;
+       padding: 6px 20px;
+   }
+}  

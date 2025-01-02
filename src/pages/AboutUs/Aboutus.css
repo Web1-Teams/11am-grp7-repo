@@ -1,0 +1,452 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.dark-mode {
+    background-color: gray;
+    color:#FFFFFF ;
+}
+
+
+
+
+.about.dark-mode {
+    background: linear-gradient(360deg, rgb(192, 184, 184) 0%,rgba(135, 132, 132, 0.4) 100%);
+}
+
+
+/* Scroll-to-top button */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #854F6C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Theme switcher */
+#themeSwitcher {
+    position:fixed;
+    top: 3px;
+    right: -25px; 
+    width: 36px; 
+    height: 36px;
+    background-color: #854F6C;
+    color: white; 
+    border: none;
+    border-radius: 50%;
+    padding: 0; 
+    font-size: 1.5rem; 
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect */
+#themeSwitcher:hover {
+    background-color:#DFB6B2; 
+}
+
+/* Explore Now button hover effect */
+#Explore {
+    background-color:#854F6C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#Explore.hover {
+    transform: scale(1.1);
+    background-color: #DFB6B2;
+}
+
+/* About Section */
+.about {
+    background: linear-gradient(360deg, #fffff5 0%,#DFB6B2 100%);
+    padding: 150px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.about hr {
+    border: 1px solid #000; 
+    color: #fffff5;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #323030;
+    max-width: 800px;
+    margin: 0 auto;
+    /* font-weight: bold; */
+}
+
+.about h2, h3 {
+    margin: 10px 30px;
+}
+
+.about h2 img {
+    width: 5rem;
+    height: 3rem;
+    margin: -7px;
+}
+
+.about-info {
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.about-img {
+    width: 50rem;
+    height: 30rem;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.about-info p {
+    font-size: 1.3rem;
+    margin: 0 2rem;
+    text-align: justify;
+}
+
+button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    margin: 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(133, 79, 108);
+    text-align: center;
+    cursor: pointer;
+    width: 15rem;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #DFB6B2;
+}
+
+/* Goals Section */
+
+.goals {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.goals h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.goals h1 img {
+    width: 3rem;
+    height: 3rem;
+    margin: -7px;
+}
+
+.goals-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 18rem;
+    height: 25rem;
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+    width: 18rem;
+    height: 12rem;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-discribtion {
+    font-size: 1.8rem;
+    color: #555;
+    margin-top: 68px;
+}
+
+
+
+.AI h1 {
+    padding: 30px 0 0;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.AI h1 img {
+    width: 3rem;
+    height: 3rem;
+    margin: -7px;
+}
+
+.AI .AI-Powered {
+    padding: 10px 0;
+    text-align:center;
+    line-height: 1.6;
+    font-size: 1.5rem;
+}
+
+.offer h1 {
+    padding: 30px 0 0;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.offer h1 img {
+    width: 3rem;
+    height: 3rem;
+    margin: -7px;
+}
+
+.offer .what-offer {
+    padding: 10px 0;
+    text-align:center;
+    line-height: 1.6;
+    font-size: 1.5rem;
+}
+
+.feedback h1 {
+    padding: 80px 0 0;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.feedback h1 img {
+    width: 3rem;
+    height: 3rem;
+    margin: -7px;
+}
+
+.shareContaniar {
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-top: -32px;
+}
+
+.answer-share li {
+    padding: 3px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.shareContaniar h2 {
+    width: 25rem;
+    height: 0;
+    margin: 7px;
+    padding: 0px;
+    margin-top: 57px;
+}
+
+.shareContaniar img {
+    width: 25rem;
+    object-fit: cover;
+    height: 25rem;
+    padding-right: 15px;
+}
+
+.reviews h1 {
+    padding: 30px 0 0 ;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.reviews h1 img {
+    width: 3rem;
+    height: 3rem;
+    margin: -7px;
+}
+
+.reviews P {
+    padding: 10px 0;
+    text-align: center;
+    line-height: 0.6;
+    font-size: 1.5rem;
+    margin-bottom: 80px;
+}
+
+.the-world h1 {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.the-world h1 img {
+    width: 3rem;
+    height: 3rem;
+    margin: -7px;
+}
+
+.the-world P {
+    padding: 10px 0;
+    text-align: center;
+    line-height: 0.6;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+} 
+
+
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    
+    .about {
+        padding: 50px 20px;
+    }
+    .about-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+    }
+
+  
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+ 
+    #scrollToTop {
+        bottom: 10px;
+        right: 10px;
+        padding: 8px 12px;
+    }
+
+   
+    #themeSwitcher {
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .about {
+        padding: 80px 40px;
+    }
+
+    .about-info {
+        display: block;
+        text-align: center;
+    }
+
+    .about-img {
+        width: 80%;
+        height: auto;
+    }
+
+    .card {
+        width: 45%;
+        margin: 10px;
+    }
+
+    button {
+        width: 50%;
+    }
+
+    #scrollToTop {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Desktop and larger devices */
+@media (min-width: 1025px) {
+    .about {
+        padding: 150px;
+    }
+
+    .about-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .about-img {
+        width: 50rem;
+        height: 30rem;
+    }
+
+    .card {
+        width: 18rem;
+        height: 25rem;
+    }
+}
