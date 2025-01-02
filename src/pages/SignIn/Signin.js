@@ -21,7 +21,7 @@ function Signin() {
   };
 
   const handleLogin = (event) => {
-    event.preventDefault();
+    event.preventDefault(); {/* to stop ref the page */}
 
     const storedEmail = localStorage.getItem('email');
     const storedPassword = localStorage.getItem('password');
@@ -29,7 +29,7 @@ function Signin() {
     if (CreateAccount) {
       if (storedEmail === email) {
         setNotification({
-          type: "error",
+          className: "error",
           message: "An account with this email already exists!"
         });
       } else {
@@ -62,6 +62,8 @@ function Signin() {
     }, 5000); 
   };
 
+  /*-------------------------------------------------------------------------------------------*/ 
+  
   return (
     <section className={styles.sign_in}>
       <img

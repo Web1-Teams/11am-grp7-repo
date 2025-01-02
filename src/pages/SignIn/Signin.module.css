@@ -149,29 +149,22 @@
 /*---------------------------------------------- Notification part */
 .notification {
   position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
+  top: 60px;
+  left: 450px;
   color: white;
   padding: 15px;
   border-radius: 8px;
   width: 300px;
   text-align: center;
   font-size: 16px;
-  z-index: 1000;
-  transition: opacity 0.5s ease;
+  z-index: 1;
 }
 
 .success {
-  background-color: #28a745;
+  background-color: green;
 }
 
 .error {
-  background-color: #dc3545;
+  background-color: red;
 }
 
-.notification.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
