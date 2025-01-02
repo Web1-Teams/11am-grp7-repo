@@ -1,118 +1,244 @@
-
-/* body {
-    background: url('../Visuals/signinBackground.jpg') no-repeat;
-    background-size:cover;
-} */
-.sign {
+.background {
     position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
-
-.sign{
-    width: 420px;
-    background:transparent;
-    border: 2px solid rgba(255, 255, 255, 0.314);
-    backdrop-filter: blur(15px);
-    color: white;
-    border-radius: 15px;
-    padding: 30px 40px;
-}
-
-.sign h1 {
-    font-size: 38px;
-    text-align: center;
-}
-
-.sign .inputs {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
-}
-
-.sign .inputs input {
-    width: 100%;
     height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, 0.314);
-    border-radius: 35px;
-    font-size: 20px;
-    color: white;
-    padding: 20px 45px 20px 20px;
-}
-
-.sign .inputs input::placeholder {
-    color: white;
-}
-.inputs i{
-    position: absolute;
-    right: 20px;
-    top:50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-}
-
-.sign .remember {
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
-    margin: 15px 0;
-}
-
-
-.remember label input {
-    accent-color: white;
-    margin-right: 3px;
-}
-
-.remember a {
-    color: white;
-    text-decoration: none;
-    transition: all 0.4s ease 0s;
-    font-weight: 600;
-}
-.remember a:hover{
-    transition: all 0.4s ease 0s;
-    color: #C7ae6a;
-    text-decoration: underline;
-}
-
-.sign .btn {
     width: 100%;
-    height: 50px;
-    background:transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, 0.314);
-    border-radius: 35px;
-    font-size: 20px;
-    color:white;
+  }
+  
+  .box {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-style: solid;
+    border-width: 2px;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin-top: 190px;
+  }
+  
+  .head_signin {
+    font-weight: 900;
+    color: white;
+    font-size: 35px;
+  }
+  
+  .inside_up {
+    margin-top: 15px;
+    font-size: large;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .inside_mid {
+    height: 210px;
+    text-align: center;
+  }
+  
+  .container_1,
+  .container_2 {
+    position: relative;
+  }
+  
+  .material-symbols-outlined {
+    position: relative;
+    top: 100%;
+    transform: translateY(-50%);
+  }
+  
+  .container_3 {
+    margin-top: 10px;
+  }
+  
+  .email,
+  .password {
+    padding: 10px;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: white;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .remember {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px;
+    width: 100%;
+    gap: 70px;
     cursor: pointer;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+  }
+  
+  .forget {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .forget:hover {
+    transition: all 0.4s ease 0s;
+    color: #333;
+    text-decoration: underline;
     font-weight: 600;
-    transition: all 0.6s ease 0s;
-}
-.sign .btn:hover{
-    font-size: 25px;
-    transition: all 0.6s ease 0s;
-}
-
-.sign .register {
+  }
+  
+  .login {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: black;
+    margin-top: 15px;
+    margin-right: 20px;
+    width: 300px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 500ms;
+  }
+  
+  .login:hover {
+    background-color: yellow;
+    color: black;
+    border-color: yellow;
+  }
+  
+  .inside_down {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+  
+  .create {
+    font-weight: 900;
+    color: white;
     font-size: 15px;
     text-align: center;
     margin: 20px 0 15px;
-}
-.sign .register a{
-    color: white;
-    text-decoration: none;
+  }
+  
+  .create a {
     transition: all 0.4s ease 0s;
     font-weight: 600;
-}
-.register a:hover{
+  }
+  
+  .create a:hover {
     transition: all 0.4s ease 0s;
-    color: #C7ae6a;
+    color: yellow;
     text-decoration: underline;
-}
+    font-weight: 600;
+  }
+  
+  .notification {
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1;
+  }
+  
+  .success {
+    background-color: green;
+  }
+  
+  .error {
+    background-color: red;
+  }
+  
+  @media (max-width: 768px) {
+    .box {
+      width: 90%;
+      height: auto;
+      margin-top: 50px;
+      left: 5%;
+    }
+  
+    .email,
+    .password,
+    .login {
+      width: 80%;
+      margin: 10px 0;
+    }
+  
+    .inside_up h1 {
+      font-size: 28px;
+    }
+  
+    .container_1,
+    .container_2 {
+      margin-bottom: 20px;
+    }
+  
+    .remember {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .create {
+      font-size: 14px;
+    }
+  
+    .notification {
+      width: 90%;
+      left: 5%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .box {
+      width: 90%;
+      height: auto;
+      margin-top: 30px;
+      left: 5%;
+    }
+  
+    .email,
+    .password,
+    .login {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .head_signin {
+      font-size: 28px;
+    }
+  
+    .container_1,
+    .container_2 {
+      margin-bottom: 15px;
+    }
+  
+    .remember {
+      flex-direction: column;
+      gap: 25px;
+    }
+  
+    .create {
+      font-size: 13px;
+    }
+  
+    .notification {
+      width: 90%;
+      left: 5%;
+      font-size: 14px;
+    }
+  }
+  
