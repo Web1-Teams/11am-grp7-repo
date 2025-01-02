@@ -1,0 +1,112 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ }
+ /* Header */
+
+ /* Alzahraa should change the Header Color for
+  each page to a color fits the whole page (Late Step) */
+
+ header.phome {
+   background-color: rgb(255, 255, 255);
+   transition: all 0.3s ease 0s;
+}
+header.paboutus {
+   background-color: rgb(255, 0, 89);
+   transition: all 0.3s ease 0s;
+}
+header.psign{
+   background-color: #000000;
+   transition: all 0.3s ease 0s;
+}
+
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+ }
+header span {
+   position: relative;
+   bottom: -6px;
+}
+
+ .logo {
+    height: 80px;
+    width: 130px;
+ }
+ 
+ .navlinks li {
+    display: inline-block;
+    padding: 0 20px;
+ }
+ .navlinks li a {
+    position: relative;
+    color: #000000;
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+ }
+
+.psign .navlinks li a {
+   position: relative;
+    color: white;
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+}
+
+ .navlinks li a:hover {
+    color: #C7ae6a;
+    transition: all 0.3s ease 0s;
+ }
+
+ .navlinks a::after {
+    content: '';
+    height: 4px;
+    width: 0;
+    background-color: #C7ae6a;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border-radius: 40px;
+    transition: all 0.3s ease 0s;
+    pointer-events: none;
+ }
+
+ .navlinks a:hover::after{
+    width: 100%;
+    transition: all 0.3s ease 0s;
+ }
+ .navlinks li.active a {
+   background-color:floralwhite;
+   color: #000000;
+   font-size: 20px;
+   border-radius: 30px;
+   height: 35px;
+   margin: 10px;
+   padding: 5px 20px;
+   transition: all 0.3s ease 0s; 
+ }
+
+ul{
+   list-style-type: none;
+}
+ .signin button {
+    padding: 6px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #000000;
+    color: #C7ae6a;
+    border-radius: 15px;
+    transition: all 0.5s ease 0s;
+    font-weight: bold;  
+    font-size: 20px;    
+ }
+ .signin button:hover {
+    color: #000000;
+    background-color: #C7ae6a;
+    transition: all 0.5s ease 0s;
+ }

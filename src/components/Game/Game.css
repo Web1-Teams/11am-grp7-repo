@@ -1,0 +1,104 @@
+/* body {
+            margin: 0;
+            height: 2000px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            background-image: url('../../Assets/Games/red_dead_redemption_2.jpg'); 
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+        } */
+
+        
+        .content-container {
+            display: flex;
+            align-items: center;
+            gap: 40px; 
+            max-width: 1200px;
+            width: 1080px;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+            margin-top: 30px;
+        }
+
+        
+        .game-image {
+            width: 350px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        
+        .story-box {
+            flex-grow: 1;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            font-size: 18px;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .genre {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+     
+        .genres-container {
+            margin-bottom: 20px;
+        }
+
+       
+        .genre-bubble {
+            display: inline-block;
+            background-color: rgba(181, 181, 181, 0.6);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            margin-right: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .genre-bubble:hover {
+            background-color: rgb(66, 66, 66);
+            cursor: pointer;
+        }
+
+     
+        .story {
+            line-height: 32px;
+            font-size: 18px;
+            color: rgb(224, 224, 224);
+        }
+
+  
+        .scroll-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.8);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .scroll-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }

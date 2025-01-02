@@ -1,0 +1,141 @@
+.gameCardContainer{
+   background: linear-gradient(to right, #1a1818,#011a34,#1a1818);
+}
+.title {
+   text-align: center;
+   font-family:Arial, sans-serif;
+   position: relative;
+   font-size: 40px;
+   top: 40px;
+   color: #fff;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   text-shadow: 0 0 20px #000000, 0 0 20px  #000, 0 0 20px  #000;
+   margin-bottom: 30px;
+}
+
+/* Game Cards Container using Grid Layout for 4 columns */
+.gameCardContainer {
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); 
+   gap: 70px; /* المسافة بين الكروت */
+   grid-auto-rows: auto; /* لضبط ارتفاع الصفوف بشكل تلقائي */
+   padding: 70px;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range : entry 0% ;
+}
+
+/* Individual Game Card */
+.gameCard {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   border-radius: 10px;
+   background-color: rgba(0, 0, 0, 0.53);
+   transition: 0.5s;
+   box-shadow: -5px 5px 10px  rgba(139, 139, 139,.6);
+   height: auto;
+   max-width: 100%;
+   transition: transform 0.3s ease;
+   
+}
+
+/* Hover effect on the card */
+.gameCard:hover {
+   background: #000;
+   transform: translateY(-15px);
+   cursor: pointer;
+   box-shadow: 0px 5px 10px  rgba(139, 139, 139,1);
+}
+
+/* Image inside the card */
+.gameCard img {
+   width: 100%;
+   height: 150px; /* تحديد ارتفاع ثابت للصورة */
+   object-fit: cover; /* لضمان تغطية الصورة للمساحة دون تشويه */
+   border-radius: 20px;
+   background-clip: padding-box;
+   box-shadow: 0 4px 10px rgba(91, 90, 90, 0.7);
+   transition: transform 0.3s, box-shadow 0.3s;
+   cursor: pointer;
+}
+
+.gameCard img:hover .start {
+   display: block;
+   filter: drop-shadow(0 0 10px #fffdef)
+}
+
+/* Text Section */
+.text {
+   display: flex;
+   flex-direction: column;
+   gap: 14px;
+   flex-wrap: wrap;
+   align-items: center;
+   margin-top: 30px;
+   font-family: "Fira Sans", serif;
+}
+
+.text h3 {
+   font-size: 20px;
+   color: #ffffff;
+   font-weight: bolder;
+   
+}
+
+.text span {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 13px;
+   color: #ffffff;
+   font-weight: bold;
+   filter:none;
+   transition: 1s;
+   font-size: 15px;
+   font-family: "Fira Sans", serif;
+}
+
+.button{
+   position: fixed;
+   bottom:50px;
+   right: 50px;
+   height:40px;
+   width:40px;
+   font-size: 30px;
+   margin: auto;
+   transition: all .3s;
+   background-color: #82a7cf;
+   color: #fff;
+   cursor: pointer;
+   border-radius: 20px;
+}
+.button:hover{
+   height:50px;
+   width:50px;
+   margin: auto;
+   box-shadow: -3px 4px 3px #ffffff52;
+   border-radius: 30px;
+   color:#000;
+}
+
+@keyframes appear {
+   from {
+      opacity: 0;
+      transform: translateY(100px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+}
+    
+.Rating {
+  height: 35px;
+  width: 100px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+ }
