@@ -25,125 +25,126 @@ import Raider from "../../Assets/Games/tomp.jpg";
 import Dead from "../../Assets/Games/Dead by Daylight.jpg";
 import Resident from "../../Assets/Games/Resident Evil.jpg";
 import Rust from "../../Assets/Games/rust.jpg";
-import  Minecraft  from "../../Assets/Games/mincraft.jpg";
+import Minecraft from "../../Assets/Games/mincraft.jpg";
+import BackToTop from "./scroll";
 
 const games = [
   {
-    name: "Game Name : RedDeadRedemption 2",
-    Type: "Type :  Open World, Story Telling , Adventure",
+    name: " Red Dead Redemption 2",
+    Type: "Type :  Open World/Adventure",
     image: RedDead,
   },
   {
-    name: "Game Name : Rainbow Six Siege",
-    Type: "Type :  FPS, PvP",
+    name: " Rainbow Six Siege",
+    Type: "Type :  FPS/PvP",
     image: Rainbow,
   },
   {
-    name: "Game Name : Arma 3",
-    Type: "Type : Action , Simulation , Shooter",
+    name: " Arma 3",
+    Type: "Type : Action/Simulation/Shooter",
     image: arma3,
   },
   {
-    name: "Game Name : Apex Legends",
-    Type: "Type : Battle Royal , FPS",
+    name: "Apex Legends",
+    Type: "Type : Battle Royal/FPS",
     image: apx,
   },
   {
-    name: "Game Name : ARK Survival Evolved",
-    Type: "Type :Open World , Survival",
+    name: " ARK Survival Evolved",
+    Type: "Type :Open World/Survival",
     image: Ark,
   },
   {
-    name: "Game Name : Valorant",
-    Type: "Type :  PvP , Competitive , Action",
+    name: " Valorant",
+    Type: "Type :  PvP/Competitive/Action",
     image: valorant,
   },
   {
-    name: "Game Name : Elden Ring ",
-    Type: "Type : Dark Fantasy, RPG",
+    name: " Elden Ring ",
+    Type: "Type : Dark Fantasy/RPG",
     image: Elden,
   },
   {
-    name: "Game Name : Delta Force",
-    Type: "Type : FPS , Extraction Shooter",
+    name: " Delta Force",
+    Type: "Type : FPS/Extraction Shooter",
     image: Delta,
   },
   {
-    name: "Game Name : Counter Strike",
-    Type: "Type : Battle Royal , FPS ",
+    name: " Counter Strike",
+    Type: "Type : Battle Royal/FPS ",
     image: Counter,
   },
   {
-    name: "Game Name : Ghost Of Tsushima",
-    Type: "Type : RPG , Story Telling",
+    name: " Ghost Of Tsushima",
+    Type: "Type : RPG/Story Telling",
     image: Ghost,
   },
   {
-    name: "Game Name : Grand theft auto 5",
-    Type: "Type :Open World, Crime , Action",
+    name: " Grand theft auto 5",
+    Type: "Type :Open World/Crime/Action",
     image: Grand,
   },
   {
-    name: "Game Name : Hades II",
+    name: " Hades II",
     Type: "Type : Action Roguelike",
     image: HadesImage,
   },
-  { name: "Game Name : Candy Crush", Type: "Type : Puzzle Game", image: candy },
+  { name: " Candy Crush", Type: "Type : Puzzle Game", image: candy },
   { name: "Game Name : Hill Climb", Type: "Type : Racing Game", image: HILL },
   {
-    name: "Game Name : My Talking Tom",
+    name: " My Talking Tom",
     Type: "Type : Virtual Pet Simulation",
     image: Tom,
   },
-  { name: "Game Name : Pokemon", Type: "Type : Card Battle", image: pokemon },
+  { name: " Pokemon", Type: "Type : Card Battle", image: pokemon },
   {
     name: "Game Name : Subway",
     Type: "Type : Endless Runner",
     image: SubwayImage,
   },
   {
-    name: "Game Name : Need for Speed Heat",
+    name: " Need for Speed Heat",
     Type: "Type : racing game",
     image: NFS,
   },
   {
-    name: "Game Name : Forza Horizon ",
+    name: " Forza Horizon ",
     Type: "Type : open-world racing game",
     image: Forza,
   },
   {
-    name: "Game Name : Tennis Clash",
+    name: " Tennis Clash",
     Type: "Type : Sports/tennis simulation.",
     image: Tennis,
   },
   {
-    name: "Game Name : fifa19",
+    name: " fifa19",
     Type: "Type : sports/soccer simulation",
     image: fifa,
   },
   {
-    name: "Game Name : Genshin impact",
+    name: " Genshin impact",
     Type: "Type : action/adventure/role-playing",
     image: Genshin,
   },
   {
-    name: "Game Name : Tomb Raider",
+    name: " Tomb Raider",
     Type: "Type : action/adventure",
     image: Raider,
   },
-  { name: "Game Name : Dead by Daylight", Type: "Type : Horror", image: Dead },
+  { name: " Dead by Daylight", Type: "Type : Horror", image: Dead },
   {
-    name: "Game Name : Resident Evil",
+    name: " Resident Evil",
     Type: "Type : Survival Horror",
     image: Resident,
   },
   {
-    name: "Game Name : Rust",
+    name: " Rust",
     Type: "Type : Multiplayer/Open World/Survival ",
     image: Rust,
   },
   {
-    name: "Game Name :  Minecraft ",
+    name: "  Minecraft ",
     Type: "Type : Survival/Adventure/Sandbox ",
     image: Minecraft,
   },
@@ -151,7 +152,7 @@ const games = [
 
 function GamesSection() {
   return (
-    <div>
+    <div className="cont">
       <h1 className="title"> Games</h1>
       <div className="gameCardContainer">
         {games.map((game, index) => (
@@ -160,10 +161,13 @@ function GamesSection() {
             <div className="text">
               <h3>{game.name}</h3>
               <span>{game.Type}</span>
+
+              <button className="Rating">Rating Now</button>
             </div>
           </div>
         ))}
       </div>
+      <BackToTop />
     </div>
   );
 }

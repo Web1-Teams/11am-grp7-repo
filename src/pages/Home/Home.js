@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./Home.module.css";
 import GameCard from "../../components/GameCard/GameCard";
-import myImage from "../../Assets/home_background.png";
+import myImage from "../../Assets/back.jpeg";
 
 function Home() {
   return (
@@ -22,9 +22,10 @@ function Home() {
       </section>
 
       {/* Hashem Whole section should wrap each card i did import the desired css file. */}
-      <div ClassName="games-cards">
+      <div >
         <GameCard />
       </div>
+      <script src="js.js"></script>
     </div>
   );
 }

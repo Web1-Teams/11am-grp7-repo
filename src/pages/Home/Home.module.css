@@ -8,7 +8,6 @@
     flex-direction: column;
  }
  .home_img{
-    opacity: .8;
     height: 644px;
     width: 100%;
     background-size: cover;
@@ -31,7 +30,7 @@
     position: relative;
     align-items: flex-start;
     margin-right: 70px;
-    margin-top: 320px;
+    margin-top: 200px;
     margin-left: 80px;
     color:#fff;
     animation: fadeIn 1s ease-out forwards;
