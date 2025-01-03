@@ -1,10 +1,12 @@
-/*
-
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/swiper-bundle.min.css';
-import { Navigation, Pagination, Autoplay } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+import styles from './module.css';
+
 
 function Populargames() {
   return (
@@ -12,17 +14,17 @@ function Populargames() {
       <h1>Most Popular</h1>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        slidesPerView={5}
+        slidesPerView={3}
+
         spaceBetween={30}
         loop={true}
         navigation={true}
-        pagination={{ clickable: true }}
         autoplay={{ delay: 2000, disableOnInteraction: false }}
       
       
       >
      <SwiperSlide>
-          <img src="image/fifa.jpg" alt="fifa"/>
+          <img src="image/Rdr.jpg" alt="fifa"/>
           <div className="game-info">
             <h3 className="game-title">Fifa</h3>
             <p className="game-category">sport</p>
@@ -82,16 +84,9 @@ function Populargames() {
     </div>
   </SwiperSlide>
 
-
-
-
-
-
       </Swiper>
     </section>
   );
 }
 
 export default Populargames;
-
-*/

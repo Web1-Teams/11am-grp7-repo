@@ -1,10 +1,4 @@
-/*
-
-
 .Popular-games{
-    
-  
-  
   background-color:  rgb(3, 3, 35);
     
     padding-top:100px ;
@@ -30,10 +24,10 @@
       0 6px 20px rgba(67, 126, 208, 0.4), 
       0 8px 30px rgba(124, 3, 169, 0.3);
       flex-wrap: wrap;
-      align-items: center;
       cursor: pointer;
       width: fit-content;
       height: fit-content;
+      align-items: center;
     }
     
     .swiper-slide img {
@@ -77,7 +71,7 @@
       color: rgb(35, 26, 108);
     
     }
-    */
     
+
     
     
