@@ -39,7 +39,11 @@ function Home() {
                     description={popgame.description} 
                     title={popgame.name}
                     pic={popgame.pic}
-          
+                    backpic={popgame.backpic}
+                    average={popgame.average}
+                    totalRatings={popgame.totalRatings}
+                    ratingValues={popgame.ratingValues}
+                    comments={popgame.comments}
                     />
                 </Popup>
             );
