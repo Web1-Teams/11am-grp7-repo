@@ -1,90 +1,82 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-import styles from './module.css';
-
+import React, { useState, useEffect } from "react";
+import styles from './Populargames.module.css';
 
 function Populargames() {
-  return (
-    <section className="Popular-games">
-      <h1>Most Popular</h1>
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        slidesPerView={3}
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-        spaceBetween={30}
-        loop={true}
-        navigation={true}
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
-      
-      
-      >
-     <SwiperSlide>
-          <img src="image/Rdr.jpg" alt="fifa"/>
-          <div className="game-info">
-            <h3 className="game-title">Fifa</h3>
-            <p className="game-category">sport</p>
-            <div className="game-rating">
-              <span>7.7</span>
-              <i className="bx bxs-star bx-tada bx-rotate-270"></i>
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % 5);
+    }, 3000);
+
+    return () => clearInterval(interval); 
+  }, []);
+
+  return (
+    <section className={styles.Populargames}>
+      <h2>Most Popular</h2>
+
+      <div className={styles.PopularCards}>
+        <div className={`${styles.PopularCard} ${currentIndex === 0 ? styles.active : ''}`}>
+          <div className={styles.Populartext}>
+            <img src="image/fortnite.jpg" alt="Fortnite" />
+            <h3>Fortnite</h3>
+            <span>survival</span>
+            <div className={styles.rating}>
+              <span>9.5/10</span>
+              <i className='bx bxs-star bx-flashing bx-flip-horizontal'></i>
             </div>
           </div>
-    </SwiperSlide>
+        </div>
 
+        <div className={`${styles.PopularCard} ${currentIndex === 1 ? styles.active : ''}`}>
+          <div className={styles.Populartext}>
+            <img src="image/rdr2.jpg" alt="Rdr2" />
+            <h3>Rdr2</h3>
+            <span>survival</span>
+            <div className={styles.rating}>
+              <span>9.1/10</span>
+              <i className='bx bxs-star bx-flashing bx-flip-horizontal'></i>
+            </div>
+          </div>
+        </div>
 
-   <SwiperSlide>
-    <img src="image/battlefield.jpg" alt="Battlefield"/>
-    <div className="game-info">
-      <h3 className="game-title">Battlefield</h3>
-      <p className="game-category">shooter</p>
-      <div className="game-rating">
-        <span>8.7</span>
-        <i className="bx bxs-star bx-tada bx-rotate-270"></i>
+        <div className={`${styles.PopularCard} ${currentIndex === 2 ? styles.active : ''}`}>
+          <div className={styles.Populartext}>
+            <img src="image/battlefield.jpg" alt="Battlefield" />
+            <h3>Battlefield</h3>
+            <span>war</span>
+            <div className={styles.rating}>
+              <span>9.9/10</span>
+              <i className='bx bxs-star bx-flashing bx-flip-horizontal'></i>
+            </div>
+          </div>
+        </div>
+
+        <div className={`${styles.PopularCard} ${currentIndex === 3 ? styles.active : ''}`}>
+          <div className={styles.Populartext}>
+            <img src="image/apex.jpg" alt="Apex Legends" />
+            <h3>Apex Legends</h3>
+            <span>survival</span>
+            <div className={styles.rating}>
+              <span>9.9/10</span>
+              <i className='bx bxs-star bx-flashing bx-flip-horizontal'></i>
+            </div>
+          </div>
+        </div>
+
+        <div className={`${styles.PopularCard} ${currentIndex === 4 ? styles.active : ''}`}>
+          <div className={styles.Populartext}>
+            <img src="image/forza.jpg" alt="Forza" />
+            <h3>Forza</h3>
+            <span>racing</span>
+            <div className={styles.rating}>
+              <span>9.6/10</span>
+              <i className='bx bxs-star bx-flashing bx-flip-horizontal'></i>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </SwiperSlide>
-
-  <SwiperSlide>
-    <img src="image/fortnite.jpg" alt="Fortnite"/>
-    <div className="game-info">
-      <h3 className="game-title">Fortnite</h3>
-      <p className="game-category">survival</p>
-      <div className="game-rating">
-        <span>8.3</span>
-        <i className="bx bxs-star bx-tada bx-rotate-270"></i>
-      </div>
-    </div>
-  </SwiperSlide>
-
-  <SwiperSlide>
-    <img src="image/forza.jpg" alt="Forza"/>
-    <div className="game-info">
-      <h3 className="game-title">Forza</h3>
-      <p className="game-category">Sport</p>
-      <div className="game-rating">
-        <span>9.2</span>
-        <i className="bx bxs-star bx-tada bx-rotate-270"></i>
-      </div>
-    </div>
-  </SwiperSlide>
-
-  <SwiperSlide>
-    <img src="image/rdr2.jpg" alt="Red Dead Redemption 2"/>
-    <div className="game-info">
-      <h3 className="game-title">Red Dead Redemption 2</h3>
-      <p className="game-category">open-world</p>
-      <div className="game-rating">
-        <span>8.7</span>
-        <i className="bx bxs-star bx-tada bx-rotate-270"></i>
-      </div>
-    </div>
-  </SwiperSlide>
-
-      </Swiper>
     </section>
   );
 }
