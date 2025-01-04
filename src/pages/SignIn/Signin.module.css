@@ -1,19 +1,22 @@
 .background {
+  background: linear-gradient(to right, #000B49, #22177A, #190482, #3F0071, #240041);
   position: absolute;
   height: 100%;
   width: 100%;
 }
 
 .box {
-  position: relative;
+  position: absolute;
   height: 400px;
   width: 400px;
   border-style: solid;
-  border-width: 3px;
-  top: 70px;
-  left: 400px;
+  border-width: 2px;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
   backdrop-filter: blur(10px);
   border-radius: 20px;
+  margin-top: 190px;
 }
 
 .head_signin {
@@ -30,7 +33,7 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-bottom: 20px;
 }
-/*------------------------------------------------------inside mid*/
+
 .inside_mid {
   height: 210px;
   text-align: center;
@@ -42,7 +45,7 @@
 }
 
 .material-symbols-outlined {
-  position: relative;
+  color: white;
   top: 100%;
   transform: translateY(-50%);
 }
@@ -51,7 +54,8 @@
   margin-top: 10px;
 }
 
-.email {
+.email,
+.password {
   padding: 10px;
   border-style: solid;
   border-radius: 15px;
@@ -60,16 +64,6 @@
   width: 300px;
   margin-bottom: 20px;
 }
-
-.password {
-  padding: 10px;
-  border-style: solid;
-  border-radius: 15px;
-  border-width: 5px;
-  border-color: white;
-  width: 300px;
-}
-
 
 .remember {
   color: white;
@@ -89,12 +83,14 @@
   color: white;
   cursor: pointer;
 }
-.forget:hover{
+
+.forget:hover {
   transition: all 0.4s ease 0s;
-  color: #333;
+  color: blue;
   text-decoration: underline;
   font-weight: 600;
 }
+
 .login {
   background-color: black;
   color: white;
@@ -103,7 +99,7 @@
   border-radius: 15px;
   border-width: 2px;
   border-color: black;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-right: 20px;
   width: 300px;
   font-size: 17px;
@@ -112,11 +108,11 @@
 }
 
 .login:hover {
-  background-color: yellow;
-  color: black;
-  border-color: yellow;
+  background-color: blue;
+  color: white;
+  border-color: blue;
 }
-/*------------------------------------------------------------ part inside down in box*/
+
 .inside_down {
   height: 80px;
   display: flex;
@@ -135,22 +131,23 @@
 }
 
 .create a {
+  color: rgb(29, 148, 203);
   transition: all 0.4s ease 0s;
   font-weight: 600;
 }
 
 .create a:hover {
   transition: all 0.4s ease 0s;
-  color: yellow;
+  color: blue;
   text-decoration: underline;
   font-weight: 600;
 }
 
-/*---------------------------------------------- Notification part */
 .notification {
   position: fixed;
   top: 60px;
-  left: 450px;
+  left: 50%;
+  transform: translateX(-50%);
   color: white;
   padding: 15px;
   border-radius: 8px;
@@ -168,3 +165,81 @@
   background-color: red;
 }
 
+@media (max-width: 768px) {
+  .box {
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+    left: 5%;
+  }
+
+  .email,
+  .password,
+  .login {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .inside_up h1 {
+    font-size: 28px;
+  }
+
+  .container_1,
+  .container_2 {
+    margin-bottom: 20px;
+  }
+
+  .remember {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .create {
+    font-size: 14px;
+  }
+
+  .notification {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    left: 5%;
+  }
+
+  .email,
+  .password,
+  .login {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .head_signin {
+    font-size: 28px;
+  }
+
+  .container_1,
+  .container_2 {
+    margin-bottom: 15px;
+  }
+
+  .remember {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .create {
+    font-size: 13px;
+  }
+
+  .notification {
+    width: 90%;
+    left: 5%;
+    font-size: 14px;
+  }
+}

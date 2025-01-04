@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Signin.module.css";
-import backgroundImage from '../../Assets/signinBackground.jpg';
+import backgroundImage from './cod-blue.jpeg';
 
 function Signin() {
   const [CreateAccount, StateCreateAccount] = useState(false);
