@@ -152,7 +152,7 @@ const games = [
 
 function GamesSection() {
   return (
-    <div className="cont">
+    <div >
       <h1 className="title"> Games</h1>
       <div className="gameCardContainer">
         {games.map((game, index) => (
@@ -162,7 +162,7 @@ function GamesSection() {
               <h3>{game.name}</h3>
               <span>{game.Type}</span>
 
-              <button className="Rating">Rating Now</button>
+              <button className="Rating-button">Rating Now</button>
             </div>
           </div>
         ))}

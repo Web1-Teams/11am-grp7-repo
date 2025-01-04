@@ -5,7 +5,7 @@ import myImage from "../../Assets/back.jpeg";
 
 function Home() {
   return (
-    <div>
+    <div className={s.cont}>
       <section id="home">
         <img src={myImage} alt="Background" className={s.home_img} />
         <div className={s.home}>

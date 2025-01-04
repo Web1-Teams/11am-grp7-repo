@@ -1,5 +1,7 @@
 /* Amr or Aprar have to replace this css with the home css */
-
+.cont{
+   background: linear-gradient(to right, #1a1818,#011a34,#1a1818);
+}
 .home{
     display: flex;
     position: relative;
@@ -55,4 +57,40 @@
     margin-left:20px;
  }  
  
+@media (max-width: 768px) {
+   .home {
+     height: auto;
+     padding: 20px;
+   }
  
+   .home_img {
+     height: auto;
+   }
+ 
+   .div_explain {
+     margin: 100px;
+     margin-left: 40px;
+     font-size: 15px;
+     width: auto;
+     text-align: center;
+   }
+ 
+   .explain_1,
+   .explain_2 {
+     margin-left: 0;
+     font-size: 18px;
+   }
+ }
+ 
+ @media (max-width: 480px) {
+   .explain_1 {
+     font-size: 16px;
+   }
+ 
+   .explain_2 {
+     font-size: 14px;
+   }
+ 
+   .div_explain {
+     margin: 10px;}
+   }

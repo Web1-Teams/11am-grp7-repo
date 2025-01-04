@@ -1,6 +1,4 @@
-.cont{
-   background: linear-gradient(to right, #1a1818,#011a34,#1a1818);
-}
+
 .title {
    text-align: center;
    font-family:Arial, sans-serif;
@@ -96,28 +94,6 @@
    font-family: "Fira Sans", serif;
 }
 
-.button{
-   position: fixed;
-   bottom:50px;
-   right: 50px;
-   height:40px;
-   width:40px;
-   font-size: 30px;
-   margin: auto;
-   transition: all .3s;
-   background-color: #82a7cf;
-   color: #fff;
-   cursor: pointer;
-   border-radius: 20px;
-}
-.button:hover{
-   height:50px;
-   width:50px;
-   margin: auto;
-   box-shadow: -3px 4px 3px #ffffff52;
-   border-radius: 30px;
-   color:#000;
-}
 
 @keyframes appear {
    from {
@@ -130,7 +106,7 @@
    }
 }
     
-.Rating {
+.Rating-button {
   height: 35px;
   width: 100px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
@@ -138,7 +114,102 @@
   font-weight: bold;
   font-size: 15px;
   cursor: pointer;
+  border-radius: 7px;
+  padding: 0;
+  box-shadow: -2px 2px 3px #727070a0;
  }
  
+ .Rating-button:hover{
+   color:#000;
+}
 
 
+@media (max-width: 768px)  {
+   .title{
+      font-size: medium;
+      margin-top: 20% ;
+   }
+   .gameCardContainer{
+      margin: auto;
+      gap:40px;
+      padding: 40px;
+      width: fit-content;
+   }
+   .gameCard{
+      padding: 20px;
+   }
+   .Rating-button{
+      height: 32px;
+      width: 90px; 
+      font-size: 14px; 
+   }
+   .gameCard img {
+      height:130px;
+   }
+   .text{
+      font-size: medium;
+   }
+   .text span{
+      font-size: medium;
+   }
+}
+
+@media (max-width: 480px)  {
+   .title{
+      font-size: medium;
+      margin-top: 20% ;
+   }
+   .gameCardContainer{
+      margin: auto;
+      gap:40px;
+      padding: 40px;
+      width: fit-content;
+   }
+   .Rating-button{
+      height: 32px;
+      width: 90px; 
+      font-size: 14px; 
+   }
+   .gameCard{
+      padding: 20px;
+   }
+   .gameCard img {
+      height:130px;
+   }
+   .text{
+      font-size: smaller;
+   }
+   .text span{
+      font-size: smaller;
+   }
+}
+
+
+@media (max-width: 1200)  {
+   .title{
+      font-size: xx-large;
+   }
+   .gameCardContainer{
+      margin: auto;
+      gap:50px;
+      padding: 50px;
+      
+   }
+   .Rating-button{
+      height: 32px;
+      width: 90px; 
+      font-size: 14px; 
+   }
+   .gameCard{
+      padding: 20px;
+   }
+   .gameCard img {
+      height:130px;
+   }
+   .text{
+      font-size: x-large;
+   }
+   .text span{
+      font-size: x-large;
+   }
+}
