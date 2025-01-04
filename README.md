@@ -29,7 +29,7 @@ The website is fully responsive, ensuring an optimal experience across desktops,
 Scroll-to-Top Button
 A smooth "Back to Top" feature to enhance navigation and usability.
 
-# How To Runing The Program 
+# How To Run The Program 
 
 
 # Video 
