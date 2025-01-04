@@ -65,14 +65,13 @@ Hope you like it 🎇
 # Mangment 
 Our project was developed collaboratively by a team of dedicated members, each responsible for specific tasks to ensure timely completion and high-quality results
 
-# The Website Was Made By 
-• Aprar Jala 
-• Hamza Thouqan 
-• Izz-Adeen Dwaikat 
-• Amr Asmar
-• Hesham Sayel 
-• Zahra Al-deek 
-• Jana  Al Qasim 
-• Saja Dwaikat 
-
+# The Website Was Made By
+• Aprar Jala  
+• Hamza Thouqan  
+• Izz-Adeen Dwaikat  
+• Amr Asmar  
+• Hesham Sayel  
+• Zahra Al-deek  
+• Jana Al Qasim  
+• Saja Dwaikat
 
