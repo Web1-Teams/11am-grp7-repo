@@ -1,10 +1,10 @@
  # Project title ✨
-  Internet Game Database 🎮
- # Explanation 
- Internet Game Database (IGDB) 🕹️ : 
+  Internet Game Database 
+ # Explanation  📋
+ Internet Game Database (IGDB)  : 
 Internet Game Database (IGDB) is an interactive platform for teenagers to discover, rate, and provide feedback on their favorite video games. Whether you’re a casual gamer or a hardcore enthusiast, IGDB allows you to share your opinions, explore trending games, and connect with a community of gamers.
 
-# Site Map 
+# Site Map 📲
 ![image alt](https://github.com/Web1-Teams/11am-grp7-repo/blob/6654ad92f7502d495423ebbebf4e568e03a44c32/sitmap%20web.jpg)
 
 #Features 
