@@ -41,6 +41,8 @@ A smooth "Back to Top" feature to enhance navigation and usability.
 
 # Magment
 Our project was developed collaboratively by a team of dedicated members, each responsible for specific tasks to ensure timely completion and high-quality results
+
+
 ![AfasAfasSoftwareGIF](https://github.com/user-attachments/assets/b99486c0-eb68-469b-b848-d1ce9bd880e6)
 
 
