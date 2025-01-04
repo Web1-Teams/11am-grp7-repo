@@ -27,7 +27,7 @@ function BackToTop() {
   return (
     <>
       {BackToTopButton && (
-        <button className="button" onClick={scrollUp} id ="arrow"> ↑ </button>
+        <button className="scroll-up-button" onClick={scrollUp} id ="arrow"> ↑ </button>
       )}
     </>
   );
