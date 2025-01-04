@@ -65,7 +65,7 @@ Hope you like it 🎇
 # Mangment 
 Our project was developed collaboratively by a team of dedicated members, each responsible for specific tasks to ensure timely completion and high-quality results
 
-# The Website Was Made By
+# The Website Was Made By👨‍💻👩‍💻
 • Aprar Jala  
 • Hamza Thouqan  
 • Izz-Adeen Dwaikat  
