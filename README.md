@@ -72,6 +72,6 @@ Our project was developed collaboratively by a team of dedicated members, each r
 • Amr Asmar  
 • Hesham Sayel  
 • Zahra Al-deek  
-• Jana Al Qasim  
+• Jana Jawabreh  
 • Saja Dwaikat
 
