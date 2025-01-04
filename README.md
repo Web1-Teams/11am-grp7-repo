@@ -1,4 +1,4 @@
- # Project title ✨
+ # Project Title ✨
   Internet Game Database 
  # Explanation  📋
  Internet Game Database (IGDB)  : 
@@ -7,7 +7,7 @@ Internet Game Database (IGDB) is an interactive platform for teenagers to discov
 # Site Map 📲
 ![image alt](https://github.com/Web1-Teams/11am-grp7-repo/blob/6654ad92f7502d495423ebbebf4e568e03a44c32/sitmap%20web.jpg)
 
-#Features 
+# Features ^_+
 Game Rating
 Rate games on a scale to let others know your thoughts on gameplay, graphics, storyline, and overall experience.
 
@@ -29,11 +29,15 @@ The website is fully responsive, ensuring an optimal experience across desktops,
 Scroll-to-Top Button
 A smooth "Back to Top" feature to enhance navigation and usability.
 
-# How To Run The Program 
+# How To Run The Program ![CatTypingGIF](https://github.com/user-attachments/assets/f6969fbe-ba7e-426b-af2e-467942de1018)
 
 
-# Video 
 
 
-# Magment 
+# Video While Runnig The Program ![CodeDaddycoolcoolGIF](https://github.com/user-attachments/assets/febac5b6-f80e-4c6d-a8a4-b59a4b5a75ad)
+
+
+
+# Magment ![AfasAfasSoftwareGIF](https://github.com/user-attachments/assets/b99486c0-eb68-469b-b848-d1ce9bd880e6)
+
 Our project was developed collaboratively by a team of dedicated members, each responsible for specific tasks to ensure timely completion and high-quality results
