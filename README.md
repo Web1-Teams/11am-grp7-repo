@@ -6,7 +6,7 @@ Internet Game Database (IGDB) is an interactive platform for teenagers to discov
 
 # Site Map 
 ![image alt](https://github.com/Web1-Teams/11am-grp7-repo/blob/6654ad92f7502d495423ebbebf4e568e03a44c32/sitmap%20web.jpg)
-!ج!
+
 #Features 
 Game Rating
 Rate games on a scale to let others know your thoughts on gameplay, graphics, storyline, and overall experience.
