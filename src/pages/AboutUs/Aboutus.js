@@ -42,25 +42,22 @@ const Aboutus = () => {
     if (taglineElement) {
       const taglineText = "Ready to level up your gaming knowledge?";
       let i = 0;
-
+      let isTyping = true; // Flag to track if the text is being typed
+    
       function typeWriterEffect() {
-        if (i < taglineText.length) {
+        if (isTyping && i < taglineText.length) {
           taglineElement.innerHTML += taglineText.charAt(i);
           i++;
           setTimeout(typeWriterEffect, 100);
-        } else {
-          setTimeout(() => {
-            taglineElement.innerHTML = "";
-            i = 0;
-            typeWriterEffect();
-          }, 1000);
+        } else if (i === taglineText.length) {
+          isTyping = false; // Stop typing once the text is fully typed
         }
       }
-
+    
       taglineElement.innerHTML = ""; // Clear initial content
       typeWriterEffect();
     }
-
+    
     if (aboutSection) {
       const themeSwitcher = document.createElement('button');
       themeSwitcher.innerText = '🌙';
@@ -74,7 +71,7 @@ const Aboutus = () => {
         document.body.classList.toggle('dark-mode', isDarkMode);
         themeSwitcher.innerText = isDarkMode ? '☀️' : '🌙';
         aboutSection.style.background = isDarkMode
-          ? 'linear-gradient(360deg, gray,rgb(102, 100, 100) 100%)'
+          ? 'linear-gradient(to right, #000B49, #22177A, #190482, #3F0071, #240041) '
           : 'linear-gradient(360deg, #fffff5 0%,#DFB6B2 100%)';
       });
     }
@@ -111,20 +108,21 @@ const Aboutus = () => {
   return (
     <div>
       <section className="about">
-        <h1>{greeting}, Welcome to IGDB!</h1>
+        <h1>About Us</h1>
         <p>Your ultimate destination for honest game reviews and insightful feedback.</p>
         <div className="about-info">
           <div className="about-img">
             <img src="/images/rb_2149266857.png" alt="About Us" />
           </div>
           <div>
-            <h2>Welcome to IGDB!</h2>
+            <h2>{greeting}</h2>
             <p>
               We offer honest and unbiased video game reviews to help you make better gaming choices.
               Whether you're new to gaming or a seasoned pro, our goal is to create a community where players can share opinions and insights.
             </p>
             <h3>Ready to level up your gaming knowledge?</h3>
             <button id="Explore">Explore Now</button>
+          
           </div>
         </div>
       </section>
@@ -201,6 +199,7 @@ const Aboutus = () => {
         <h1>The World of Games <img src="/images/drawing.gif" alt="game" /></h1>
         <p>Check out the hottest games of the season, trending reviews, and top-rated picks from gamers like you.</p>
       </section>
+
     </div>
   );
 };

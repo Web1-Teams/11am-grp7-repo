@@ -7,6 +7,7 @@ import Header from './components/Header/Header';
 import Signin from './pages/SignIn/Signin';
 import Aboutus from "./pages/AboutUs/Aboutus";
 import Footer from "./components/Footer/Footer";
+import Contact from "./pages/Contact/Contact";
 
 // Don't change anything in the App function without notifying the whole team.
 
@@ -22,7 +23,11 @@ function App() {
             </Route>
             <Route path="/signin" element={<Signin />}/>
             <Route path="/aboutus" element={<Aboutus />}/>
+            <Route path="/Contact" element={<Contact/>}/>
         </Routes>
+
+        <Contact />
+
     <Footer />
     </>
 
