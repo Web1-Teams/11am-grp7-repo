@@ -1,4 +1,4 @@
- ✨ # Project title 
+ # Project title ✨
 Internet Game Database 🎮
  # Explanation 
  Internet Game Database (IGDB) 🕹️ : 
