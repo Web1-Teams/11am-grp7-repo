@@ -1,34 +1,37 @@
 import React from "react";
-
-import s from './Home.module.css'; //be aware when using element styling
-
+import s from "./Home.module.css";
 import GameCard from "../../components/GameCard/GameCard";
-import styles from "../../components/GameCard/GameCard.module.css";
-
-
+import myImage from "../../Assets/back.jpeg";
 
 function Home() {
-    return(
+  return (
     <div>
-    <div className={s.div}>Home  Aprar & amr Code here</div>
+      <section id="home">
+        <img src={myImage} alt="Background" className={s.home_img} />
+        <div className={s.home}>
+          <div className={s.div_explain}>
+            <h1 className={s.explain_1}>
+              Rating your favorite games and share your feedback !
+            </h1>
+            <p className={s.explain_2}>
+              Leave Your Ratings, And Let Us Know How We Can Improve Your Gaming
+              Experience.
+            </p>
+          </div>
+        </div>
+      </section>
 
-
-{/* Hashem Whole section should wrap each card i did import the desired css file. */}
-     <h2 className={styles.gamestitle}>Games</h2>
-     <div className={styles.games}>    
+      {/* Hashem Whole section should wrap each card i did import the desired css file. */}
+      <div >
         <GameCard />
-        <GameCard />
-        <GameCard />
-        <GameCard />
-        <GameCard />
-        <GameCard />
-        <GameCard />
+      </div>
+      <script src="js.js"></script>
     </div>
-    </div>
-    );
+  );
 }
 
-//if you have added any javascript to the home section convert 
+//if you have added any javascript to the home section convert
 // them into functions and include them here.
 
 export default Home;
+console.log("Home component rendered");
