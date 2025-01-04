@@ -1,0 +1,289 @@
+
+
+.background {
+    background: linear-gradient(to right, #000B49, #22177A, #190482, #3F0071, #240041);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .box {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-style: solid;
+    border-width: 2px;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin-top: 190px;
+  }
+  
+  .head_signin {
+    font-weight: 900;
+    color: white;
+    font-size: 35px;
+  }
+  
+  .inside_up {
+    margin-top: 15px;
+    font-size: large;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .inside_mid {
+    height: 210px;
+    text-align: center;
+  }
+  
+  .container_1,
+  .container_2 {
+    position: relative;
+    
+  }
+  
+
+  .material-symbols-outlined {
+    position: relative;
+    color: white;
+    top: 100%;
+    transform: translateY(-50%);
+    
+  }
+  
+  .container_3 {
+    margin-top: 10px;
+  }
+  
+  .email,
+  .password {
+    padding: 10px;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: white;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .remember {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px;
+    width: 100%;
+    gap: 70px;
+    cursor: pointer;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+  }
+  
+  .forget {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .forget:hover {
+    transition: all 0.4s ease 0s;
+    color: blue;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  
+  .login {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: black;
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 300px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 500ms;
+  }
+  
+  .login:hover {
+    background-color: blue;
+    color: white;
+    border-color: blue;
+  }
+  
+  .inside_down {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+  
+  .create {
+    font-weight: 900;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+  }
+  
+  .create a {
+    color: rgb(29, 148, 203);
+    transition: all 0.4s ease 0s;
+    font-weight: 600;
+  }
+  
+  .create a:hover {
+    transition: all 0.4s ease 0s;
+    color: blue;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  
+  .notification {
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1;
+  }
+  
+  .success {
+    background-color: green;
+  }
+  
+  .error {
+    background-color: red;
+  }
+  
+  @media (max-width: 768px) {
+    .background {
+        height: 600px;
+    }
+    .box {
+      width: 60%;
+      height: 50%;
+      margin-top: 190px;
+      
+    }
+  
+    .email,
+    .password,
+    .login {
+      width: 80%;
+      margin: 10px 0;
+      font-size: 15px;
+      position: relative;
+      bottom: 20px;
+    }
+    .material-symbols-outlined i{
+       position: relative;
+       bottom: 10px;
+    }
+  
+    .inside_up h1 {
+      font-size: 28px;
+    }
+  
+    .container_1,
+    .container_2 {
+      margin-bottom: 20px;
+    }
+  
+    .remember {
+      flex-direction: column;
+      gap: 30px;
+      position: relative;
+      bottom: 30px;
+    }
+  
+    .create {
+      font-size: 9px;
+      position: relative;
+      bottom: 50px;
+    }
+  
+    .notification {
+      width: 90%;
+      left: 5%;
+    }
+    .forget {
+        font-size: 10px;
+    
+       
+    }
+    .background {
+      height: 1000px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .box {
+        width: 70%;
+        
+        height: 60%;
+        margin-top: 190px;
+    }
+  
+    .email,
+    .password,
+    .login {
+      width: 80%;
+      height: 30px;
+      margin: 10px 0;
+      font-size: 15px;
+      position: relative;
+      bottom: 20px;
+    }
+  
+    .head_signin {
+      font-size: 28px;
+    }
+  
+    .container_1,
+    .container_2 {
+      margin-bottom: 15px;
+    }
+  
+    .remember {
+      flex-direction: column;
+      gap: 25px;
+    }
+  
+    .create {
+      font-size: 8px;
+      position: relative;
+      bottom: 50px;
+    }
+  
+    .forget {
+        font-size: 7px;
+
+    }
+
+    .notification {
+      width: 90%;
+      left: 5%;
+      font-size: 14px;
+    }
+
+    .background {
+      height: 660px;
+    }
+  }

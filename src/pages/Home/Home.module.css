@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto+Slab:wght@100..900&family=Rubik+Vinyl&display=swap');
+.home{
+   display: flex;
+   position: relative;
+   justify-content: center;
+   height: 650px;
+   flex-direction: column;
+}
+.home_img{
+   height: 750px;
+
+   width: 100%;
+   background-size: cover;
+   border : 1px solid black;
+   position: absolute;
+
+   }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.div_explain{
+   position: relative;
+   align-items: flex-start;
+   margin-right: 70px;
+   margin-top: 490px;
+   margin-left: 80px;
+   color:#fff;
+   animation: fadeIn 1s ease-out forwards;
+   background:#1e1e2099;
+   text-shadow: -2px -2px  #0f009a, -1px -1px  #000000, -1px -1px  #000000, -4px 2px  #000000;
+   width:1020px;
+   border-radius: 20px;
+   font-family: "Roboto Slab", serif;
+   font-size: 20px;
+   line-height: 50px;
+   font-weight: 900;
+   font-style: italic;  
+
+}
+
+
+.explain_1{
+   font-weight:400;
+   font-size: 35px;
+   margin-left:15px;
+   letter-spacing: 2px; 
+  
+}
+
+.explain_2{
+  font-weight:400;
+   font-size: 18px;
+   margin-left:20px;
+   letter-spacing: 2px;
+} 
+
+@media (max-width: 768px) {
+   .home {
+     height: auto;
+     padding: 20px;
+   }
+ 
+   .home_img {
+     height: auto;
+   }
+ 
+   .div_explain {
+     margin: 100px;
+     margin-left: 40px;
+     font-size: 15px;
+     width: auto;
+     text-align: center;
+   }
+ 
+   .explain_1,
+   .explain_2 {
+     margin-left: 0;
+     font-size: 18px;
+   }
+ }
+ 
+ @media (max-width: 480px) {
+   .explain_1 {
+     font-size: 16px;
+   }
+ 
+   .explain_2 {
+     font-size: 14px;
+   }
+ 
+   .div_explain {
+     margin: 10px;
+   }
+ }

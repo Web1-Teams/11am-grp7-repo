@@ -1,0 +1,381 @@
+  
+        .content-container {
+            display: flex;
+            align-items: center;
+            gap: 40px; 
+            max-width: 1200px;
+            width: 1080px;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+            margin-top: 30px;
+        }
+
+        
+        .game-image {
+            width: 350px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        
+        .story-box {
+            flex-grow: 1;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .Name {
+            color: #ffffff;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .genre {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+     
+        .genres-container {
+            margin-bottom: 20px;
+        }
+
+       
+        .genre-bubble {
+            display: inline-block;
+            background-color: rgba(181, 181, 181, 0.6);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            margin-right: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .genre-bubble:hover {
+            background-color: rgb(66, 66, 66);
+            cursor: pointer;
+        }
+
+     
+        .story {
+            line-height: 32px;
+            font-size: 18px;
+            color: rgb(224, 224, 224);
+        }
+
+  
+        .scroll-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.8);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .scroll-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Rating section */
+
+
+        .RatingSec {
+            min-height: 45vh;
+            display: grid;
+            place-items: center;
+            color:#ffffff;
+        }
+        
+        .Ratin {
+            width: 65vw;
+            display: flex;
+            align-items: center;
+            column-gap: 2rem;
+        }
+
+        .RatingAVG {
+            width: 30%;
+            background-color: #000;
+            padding: 1rem;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .RatingAVG h1 {
+            font-size: 3rem;
+        }
+        .RatingAVG p {
+            margin-top: .7rem;
+            letter-spacing: .1rem;
+
+        }
+
+        .RatingPro {
+            width: 70%;
+        }
+
+        .RatingValue {
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            column-gap: 1rem;
+        }
+        .RatingValue .star {
+            font-size: 1.2rem;
+            color: gold;
+
+        }
+        .RatingValue .Pro {
+            flex: 1 1 0;
+            height: .5rem;
+            border-radius: 20px;
+            background-color: #ff02;
+
+        }
+
+        .Bar {
+            height: 100%;
+            background-color: gold;
+            border-radius: 20px;
+        }
+
+        /* Rating user */
+
+        input[type=radio] {
+            display: none;
+        }
+        .Fstar {
+            cursor: pointer;
+            position: relative;
+            right: 0;
+        }
+        .Rater {
+            height: 5vw;
+            display: inline;
+            position: relative;
+            align-items: center;
+        }
+        .Rate {
+            
+            color:#ffffff;
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        .content-container button {
+            position: absolute;
+            left: 76%;
+            border: none;
+            padding: 10px 40px;
+            background-color: #000;
+            color: #ffffff;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            transition: 1s;
+        }
+        .content-container button:hover {
+            background-color: #ff0;
+            color: #000;
+            transition: 1s;
+            cursor: pointer;
+        }
+
+        /* Comments section */
+        .bottomComment {
+            position: relative;
+            top: 200px;
+            overflow: scroll;
+            overflow-x: hidden;
+            height: 550px;
+        }
+
+        .borderComment {
+            min-width: 980px;
+            margin: 15px;
+            padding: 20px;
+            border: #ffffff 3px solid;
+            border-radius: 10px;
+        }
+        .borderComment h4 {
+            font-size: 20px;
+            color: #ffffff;
+            padding-bottom: 10px;
+        }
+        .borderComment p {
+            color: #ffffff;
+            position: relative;
+            left: 80px;
+        }
+        .borderComment span {
+            color: #ffffff;
+            font-size: 18px;
+        }
+        .borderComment .thumb {
+            border: none;
+            background: none;
+            position: relative;
+            padding: 3px;
+        }
+        .borderComment .thumbcount {
+            position: relative;
+            left: 76.5%;
+        }
+
+        .comment h3 {
+            color: #ffffff;
+            font-size: 30px;
+
+        }
+
+/* Responsiveness */
+
+        @media (max-width: 768px){
+            .content-container{
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                padding: 15px;
+                width: 650px;
+                
+            }
+            .Fstar {
+                width: 35px;
+                position: relative;
+                top: 10px;
+            }
+        
+
+            .content-container button {
+                height: 50px;
+
+                font-size: 23px;
+                position: relative;
+                top: -13px;
+                left: 30%;
+            }
+            .borderComment {
+                min-width: 490px;
+            }
+            .bottomComment {
+                width: 650px;
+                height: 30%;
+            }
+            .borderComment p {
+                position: relative;
+                left: 30px;
+                width: 360px;
+            }
+            .borderComment h4 {
+                font-size: 20px;
+            }
+           
+            .game-image {
+                width: 300px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            .story-box {
+                font-size: 16px;
+            }
+            .genre-bubble {
+                font-size: 13px;
+                padding: 8px 20px; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content-container {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+                width: 300px;
+            }
+            .game-image {
+                width: 100%;
+                border-radius: 10px;
+            }
+            .Rate {
+                font-size: 18px;
+            }
+            .Fstar {
+                width: 20px;
+            }
+            .content-container button {
+                height: 30px;
+                font-size: 13px;
+                position: relative;
+                top: -1px;
+                left: 30%;
+            }
+            .bottomComment {
+                width: 300px;
+                height: 30%;
+            }
+            .borderComment p {
+                position: relative;
+                left: 30px;
+                width: 170px;
+            }
+            .borderComment h4 {
+                font-size: 20px;
+                
+            }
+            .genre-bubble {
+               margin: 5px;
+            }
+    
+        
+            h1 {
+                font-size: 20px;
+            }
+            .story-box {
+                font-size: 14px;
+
+            }
+            .genre-bubble {
+                font-size: 10px;
+                padding: 6px 15px;
+            }
+            .scroll-button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+
+            .Ratin {
+                flex-direction: column;
+                align-items: flex-start;
+                row-gap: 15px;
+            }
+            .RatingAVG {
+                width: 100%;
+            }
+            .RatingPro{
+                width:100%;
+            }
+
+            .bottomComment {
+                height: auto;
+            }
+            .borderComment {
+                min-width: 100%;
+                padding: 15px;
+            }
+        }

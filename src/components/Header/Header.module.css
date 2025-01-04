@@ -1,0 +1,253 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ }
+ /* Header */
+
+ /* Alzahraa should change the Header Color for
+  each page to a color fits the whole page (Late Step) */
+
+ header.phome {
+   background:  linear-gradient(to right, #0a264c32 0%, #050505 100%);
+   box-shadow: #ffffff6b 3px 1px 3px;
+
+   transition: all 0.3s ease 0s;
+}
+
+header.paboutus {
+   background: linear-gradient(360deg, #FFFFFF 0%, #e6e6e6 100%);
+   transition: all 0.3s ease 0s;
+}
+header.psign{
+   background-color: #000000;
+   transition: all 0.3s ease 0s;
+}
+
+header.pcontact{
+   background:  linear-gradient(to right, #0a264c32 0%, #190482af 100%);
+   /* background: linear-gradient(to right, #000b493d, #22177A, #190482, #3F0071, #240041); */
+   box-shadow: #ffffff6b 3px 1px 3px;
+   
+   transition: all 0.3s ease 0s;
+}
+
+ header {
+   position: fixed;
+   width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    z-index: 1000;
+ }
+header span {
+   position: relative;
+   bottom: -6px;
+}
+
+ /* .logo {
+    height: 80px;
+    width: 130px;
+ }
+  */
+ .navlinks li {
+    display: inline-block;
+    padding: 0 20px;
+ }
+ .navlinks li a {
+    position: relative;
+    color: #ffffff;
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+ }
+
+.psign .navlinks li a {
+   position: relative;
+    color: white;
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+}
+
+.paboutus .navlinks li a {
+   position: relative;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+}
+
+ .navlinks li a:hover {
+    color: #6a94c7;
+    transition: all 0.3s ease 0s;
+ }
+
+ .navlinks a::after {
+    content: '';
+    height: 4px;
+    width: 0;
+    background-color: #6a94c7;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border-radius: 40px;
+    transition: all 0.3s ease 0s;
+    pointer-events: none;
+ }
+
+ .navlinks a:hover::after{
+    width: 100%;
+    transition: all 0.3s ease 0s;
+ }
+ .navlinks li.active a {
+   background-color:floralwhite;
+   color: #000000;
+   font-size: 20px;
+   border-radius: 30px;
+   height: 35px;
+   margin: 10px;
+   padding: 5px 20px;
+   transition: all 0.3s ease 0s; 
+ }
+
+ul{
+   list-style-type: none;
+}
+ .signin button {
+    padding: 6px 20px;
+    cursor: pointer;
+    border: none;
+    background:transparent;
+    color: #ffffff;
+    border-radius: 15px;
+    transition: all 0.5s ease 0s;
+    font-weight: bold;  
+    font-size: 20px;    
+ }
+ .signin button:hover {
+    background: transparent;
+    text-shadow: #6a94c7 0px 1px 3px;
+    transition: all 0.5s ease 0s;
+ }
+
+ .paboutus .signin button {
+   color: #000000;
+ }
+
+ .paboutus .logo {
+   color: black;
+ }
+
+ .logo {
+   font-family:sans-serif, serif;
+   font-size: 37px;
+   border-radius: 15px;
+   padding: 0px 20px;
+   cursor: pointer;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   font-weight: bold;
+   color:#ffffff;
+   /* position: relative; */
+
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   animation: slideIn 1.5s ease-in-out;
+   text-shadow: 2px 2px 5px rgba(0,0 ,0, 0.8);
+ }
+ @keyframes slideIn{
+   from{
+      opacity: 0;
+      transform: translateX(-50px);
+   }
+   to{
+      opacity: 1;
+      transform: translateX(0);
+   }
+ }
+ .logo:active{
+   transform:scale(0.95);
+ }
+ .animate{
+   animation: movelogo 0.8 ease-out, glow 0.8 ease-out;
+ }
+ @keyframes movelogo{
+   0%{
+      transform: translateY(0) scale(1);
+   }
+   50%{
+      transform:translateY(-20px) scale(1.1);
+   }
+   100%{
+      transform: translateY(0) scale(1);
+   }
+ }
+@keyframes glow{
+   0%, 100%{
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+   }
+   50%{
+      box-shadow: 0 10px 30px rgba(99, 173, 255, 0.8);
+   }
+}
+
+@media (max-width: 1024px) {
+   header {
+     padding: 20px 5%;
+     height: 70px;
+   }
+ 
+   .logo {
+     font-size: 30px;
+   }
+ 
+   .navlinks {
+     flex-direction: row;
+   }
+ 
+   .navlinks li a {
+     font-size: 16px;
+   }
+ }
+ 
+ @media (max-width: 768px) {
+   .navlinks {
+     display: none;
+     flex-direction: column;
+     position: absolute;
+     top: 100%;
+     right: 0;
+     background-color: rgba(0, 0, 0, 0.9);
+     width: 100%;
+     text-align: center;
+     padding: 20px 0;
+   }
+ 
+   .navlinks.active {
+     display: flex;
+   }
+ 
+   .navlinks li {
+     padding: 10px 0;
+   }
+ 
+   .nav-toggle {
+     display: block;
+   }
+ }
+ 
+ @media (max-width: 480px) {
+   header {
+     padding: 15px 5%;
+     height: 60px;
+   }
+ 
+   .logo {
+     font-size: 24px;
+   }
+ 
+   .navlinks li a {
+     font-size: 14px;
+   }
+ }

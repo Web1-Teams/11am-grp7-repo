@@ -1,0 +1,271 @@
+.left-right-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container{
+    width: calc(100% - 120pX);
+    margin: auto;
+  }
+  footer{
+    display: flex;
+    background:  linear-gradient(360deg, #0202029d 0%, #2024335f 100%);
+    width: 100%;
+    padding: 50px 50px 30px 62px;
+   
+    box-shadow: 0 -5px 15px #baafd4;  
+  }
+  footer.phome {
+    background: linear-gradient(to right, #1a1818,#011a34,#1a1818);
+    box-shadow: 0 -5px 15px #0091f297;  
+
+  }
+  footer.paboutus {
+    background: linear-gradient(360deg, #FFFFFF 0%, #e6e6e6 100%);
+    box-shadow: 0 -5px 15px #00000097;  
+
+  }
+
+  footer.paboutus .dark-mode {
+    background: linear-gradient(360deg, #FFFFFF 0%, #e6e6e6 100%);
+    box-shadow: 0 -5px 15px #00000097;  
+
+  }
+
+  .left-side{
+    display: flex;
+    flex-direction: column;
+  margin-bottom: 100px;
+  gap:40px;
+  }
+  .left-side h3{
+    font-size: 25px;
+  }
+  .left-side img{
+    width: 150px;
+    height: 150px; 
+  }
+
+  .phome .left-side h3 {
+    color: #fff;
+  }
+  .phome .right-side h4 {
+    color: #fff;
+  }
+  .phome .right-side h4 a{
+    color: #fff;
+  }
+  .phome .contact .icons i{
+    color: #baafd4;
+  }
+  .phome .contact span {
+    color: #fff;
+  }
+  .phome h6 {
+    color: #baafd4;
+  }
+  .phome .right-side a {
+    color: #baafd4;
+  }
+
+
+  
+    .contact{
+     display: flex;
+    gap: 20px;
+    flex-direction: column;
+    }
+  
+    .contact .icons{
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    
+    }
+  
+    .icons span{
+    color:  #080808;
+    font-family: Be Vietnam Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  
+    }
+    .icons i{
+      font-size: 20px;
+      color: #0f0f0f;
+      }
+  
+      .right-side{
+        display: flex;
+        gap: 70px;
+      }
+  
+      .right-side h4{
+        color: var(--Grey-15, #000000 );
+      font-family: Be Vietnam Pro;
+      font-size: 20px;
+      font-weight: 800;
+      
+      }
+      .right-side h4 a{
+        font-weight: 800;
+      }
+
+   
+  
+      .footer-list{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .footer-list ul{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+  
+      .footer-list a{
+        color:  #000000;
+      font-family: Be Vietnam Pro;
+      font-size: 18px;
+      font-weight: 400;
+      line-height:150% ;
+      }
+  
+      
+  .footer-list .icon{
+    display: flex;
+    gap: 14px;
+  }
+  
+  .icon i{
+   
+    padding: 12px;
+    border-radius: 50%;
+  border: 1px solid  #C7ae6a;
+  background: #fff;
+  box-shadow: 0 0 15px  #ffffff8e ;
+  transition: 1s;
+  }
+  
+  
+  .icon i:hover{
+    background-color:white ;
+    cursor: pointer;
+    transition: 1s;
+    transform: rotate(360deg);  
+  }
+
+  
+  h6{
+    color: #000000;
+    text-align: center;
+    position: relative;
+    top:20px ;
+  }
+
+  ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 5px;
+  }
+  
+  ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    footer {
+      padding: 40px 30px 20px 30px;
+    }
+  
+    .left-right-side {
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+    }
+  
+    .left-side {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .right-side {
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .footer-list {
+      text-align: center;
+    }
+  
+    .footer-list ul {
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    footer {
+      padding: 30px 20px 20px 20px;
+    }
+  
+    .right-side {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .icon {
+      justify-content: center;
+    }
+  
+    h6 {
+      font-size: 12px;
+    }
+  
+    .footer-list h4 {
+      font-size: 16px;
+    }
+  
+    .footer-list ul li {
+      font-size: 10px;
+    }
+  
+    .icons span, .footer-list h4 a {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .footer-list h4 {
+      font-size: 14px;
+    }
+  
+    .footer-list ul li {
+      font-size: 8px;
+    }
+  
+    .icons span {
+      font-size: 10px;
+    }
+  
+    .contact .icons {
+      gap: 4px;
+    }
+  }

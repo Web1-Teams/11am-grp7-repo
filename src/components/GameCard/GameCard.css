@@ -1,0 +1,290 @@
+.cont{
+   background: linear-gradient(to right, #1a1818,#011a34,#1a1818);
+}
+.title {
+   text-align: center;
+   font-family:Arial, sans-serif;
+   position: relative;
+   font-size: 40px;
+   top: 40px;
+   color: #fff;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   text-shadow: 0 0 20px #000000, 0 0 20px  #000, 0 0 20px  #000;
+   margin-bottom: 30px;
+}
+
+.gameCardContainer {
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); 
+   gap: 70px; 
+   grid-auto-rows: auto; 
+   padding: 70px;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range : entry 0% ;
+}
+
+
+.gameCard {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 40px 20px;
+   border-radius: 10px;
+   background-color: rgba(0, 0, 0, 0.53);
+   transition: 0.5s;
+   box-shadow: 0 4px 10px rgba(2, 85, 118, 0.479);
+   height: auto;
+   max-width: 100%;
+   transition: transform 0.3s ease;
+}
+
+
+.gameCard:hover {
+   background: rgba(2, 85, 118, 0);
+   transform: scale(1.05);
+   cursor: pointer;
+   box-shadow: 0px 5px 10px  rgba(2, 85, 118, 0.479);
+   transition: 0.3s;
+
+}
+
+.gameCard img {
+   width: 100%;
+   height: 150px; 
+   object-fit: cover; 
+   border-radius: 10px;
+   background-clip: padding-box;
+   box-shadow: 0 4px 10px rgba(2, 85, 118, 0.962);
+   transition: transform 0.3s, box-shadow 0.3s;
+   cursor: pointer;
+   transition: 0.3s;
+
+}
+
+.gameCard img:hover .start {
+   display: block;
+   filter: drop-shadow(0 0 10px #fffdef);
+   
+}
+
+/* Text Section */
+.text {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   flex-wrap: wrap;
+   align-items: center;
+   font-family: "Fira Sans", serif;
+   font-size: 20px;
+}
+
+.text h3 {
+   font-size: 15px;
+   color: #ffffff;
+   font-weight: bolder;
+   
+}
+
+.text span {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 13px;
+   color: #ffffff;
+   font-weight: bold;
+   filter:none;
+   transition: 1s;
+   font-size: 15px;
+   font-family: "Fira Sans", serif;
+}
+
+.gamesh  {
+   color: #fff;
+   font-size: 75px;
+   text-align: center;
+   letter-spacing: 3px;
+   text-shadow: #000 10px 10px 10px; 
+ }
+ 
+
+.Rating-button {
+   margin-top: 10px;
+   height: 35px;
+   width: 100px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+   letter-spacing: 1px;
+   font-weight: bold;
+   font-size: 15px;
+   cursor: pointer;
+   border-radius: 7px;
+   padding: 0;
+   box-shadow: -2px 2px 3px rgba(2, 85, 118, 0.962);
+   background:transparent;
+   color: #fff;
+   border: 1px solid rgba(2, 85, 118, 0.962);
+   width: 240px;
+   transition: 0.3s;
+
+}
+  
+  .Rating-button:hover{
+    color:#000;
+    background-color: rgba(2, 85, 118, 0.962);
+    transition: 0.3s;
+
+ }
+
+ .button{
+   position: fixed;
+   bottom:50px;
+   right: 50px;
+   height:40px;
+   width:40px;
+   font-size: 30px;
+   margin: auto;
+   transition: all .3s;
+   background-color: #82a7cf;
+   color: #fff;
+   cursor: pointer;
+   border-radius: 20px;
+}
+.button:hover{
+   height:50px;
+   width:50px;
+   margin: auto;
+   box-shadow: -3px 4px 3px #ffffff52;
+   border-radius: 30px;
+   color:#000;
+}
+
+@keyframes appear {
+   from {
+      opacity: 0;
+      transform: translateY(100px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+}
+    
+.Rating {
+  height: 35px;
+  width: 100px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+ }
+
+ @media (max-width: 768px)  {
+   .title{
+      font-size: medium;
+      margin-top: 20% ;
+   }
+   .gameCardContainer{
+      margin: auto;
+      gap:40px;
+      padding: 40px;
+      width: fit-content;
+   }
+   .gameCard{
+      padding: 20px;
+   }
+   .Rating-button{
+      height: 32px;
+      width: 90px; 
+      font-size: 14px; 
+   }
+   .gameCard img {
+      height:130px;
+   }
+   .text{
+      font-size: medium;
+   }
+   .text span{
+      font-size: medium;
+   }
+
+   .scroll-up-button {
+      height: 30px; 
+      width: 30px;
+      bottom: 30px;
+      right: 30px;
+      font-size: 25px;
+   }
+}
+
+@media (max-width: 480px)  {
+   .title{
+      font-size: medium;
+      margin-top: 20% ;
+   }
+   .gameCardContainer{
+      margin: auto;
+      gap:40px;
+      padding: 40px;
+      width: fit-content;
+   }
+   .Rating-button{
+      height: 32px;
+      width: 90px; 
+      font-size: 14px; 
+   }
+   .gameCard{
+      padding: 20px;
+   }
+   .gameCard img {
+      height:130px;
+   }
+   .text{
+      font-size: smaller;
+   }
+   .text span{
+      font-size: smaller;
+   }
+   .scro
+.scroll-up-button {
+     height: 30px; 
+     width: 30px;
+     bottom: 30px;
+     right: 30px;
+     font-size: 25px;
+  }
+}
+@media (max-width: 1200)  {
+   .title{
+      font-size: xx-large;
+   }
+   .gameCardContainer{
+      margin: auto;
+      gap:50px;
+      padding: 50px;
+      
+   }
+   .Rating-button{
+      height: 32px;
+      width: 90px; 
+      font-size: 14px; 
+   }
+   .gameCard{
+      padding: 20px;
+   }
+   .gameCard img {
+      height:130px;
+   }
+   .text{
+      font-size: x-large;
+   }
+   .text span{
+      font-size: x-large;
+   }
+   .scroll-up-button{
+     height: 35px; 
+     width: 35px;
+     bottom: 40px;
+     right: 40px;
+     font-size: 28px;
+   }
+}

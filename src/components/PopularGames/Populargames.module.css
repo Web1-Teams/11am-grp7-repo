@@ -1,0 +1,92 @@
+.Populargames {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: 90px;
+    background: linear-gradient(to right, #1a1818,#011a34,#1a1818);
+  }
+
+  .PopularCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+  }
+  
+  .PopularCard {
+    min-width: 700px;
+    max-width: 300px;
+    flex-shrink: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;  
+    cursor: pointer;
+  }
+  
+  .PopularCard.active {
+    opacity: 1;
+    position: relative;  
+  }
+  
+  .PopularCard img {
+    width: 70%;  
+    height: auto;  
+    object-fit: cover;  
+    border-radius: 20px;
+    box-shadow: 
+    0 6px 10px rgba(47, 71, 204, 0.8), 
+    0 8px 20px rgba(10, 82, 183, 0.7), 
+    0 10px 30px rgba(187, 0, 255, 0.6); 
+  transition:1s ;
+    
+  }
+  .PopularCard img:hover {
+    box-shadow: 
+    0 6px 40px rgba(47, 71, 204, 0.8), 
+    0 8px 60px rgba(10, 82, 183, 0.7), 
+    0 10px 80px rgba(187, 0, 255, 0.6);  
+  transition:1s ;
+
+  }
+  
+  .Populartext {
+    padding: 10px 1px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+
+  }
+  .Populargames h2{
+    font-size: 50px;
+    color: white;
+    padding: 30px;
+
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .PopularCard img {
+        width: 250px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .PopularCard img {
+        width: 200px;
+    }
+
+
+  }
