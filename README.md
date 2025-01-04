@@ -29,7 +29,7 @@ The website is fully responsive, ensuring an optimal experience across desktops,
 Scroll-to-Top Button
 A smooth "Back to Top" feature to enhance navigation and usability.
 
-# How To Run The Program 
+# How We  Run The Program 
 ![CatTypingGIF](https://github.com/user-attachments/assets/f6969fbe-ba7e-426b-af2e-467942de1018)
 
 
@@ -38,7 +38,7 @@ A smooth "Back to Top" feature to enhance navigation and usability.
 ![CodeDaddycoolcoolGIF](https://github.com/user-attachments/assets/febac5b6-f80e-4c6d-a8a4-b59a4b5a75ad)
 
 
-Hope you like it 
+Hope you like it 🎇
 # Mangment
 Our project was developed collaboratively by a team of dedicated members, each responsible for specific tasks to ensure timely completion and high-quality results
 
