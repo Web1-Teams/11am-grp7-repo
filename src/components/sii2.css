@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    }
+    
+    body{
+    
+    width: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:0 10px ;
+    padding:0 10px ;
+    color:black;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:-1;
+    background-image: -moz-elemen;
+    background-image:url(img444.jpg);
+    
+    }
+    
+    body::before{
+    
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:100%;
+    
+    
+    }
+    .wrapper{
+    
+    width: 590px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    border: 1px ;
+    backdrop-filter: blur(8px);
+    }
+    
+    from{
+    display: flex;
+    flex-direction: column;
+    }
+    
+    h2{
+    
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color:black;
+    }
+    .input-field{
+    position: relative;
+    border-bottom:2px ;
+    margin: 15px;
+    }
+    .input-field label{
+        position: absolute;
+        color:black;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50);
+        font-size: 16px;
+        pointer-events: none;
+        transition:0.15s ease;
+    }
+    .input-field input{
+    width:100%;
+    height:100px;
+    color:black;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size:30px;
+    }
+    .input-field input:focus~label,
+    .input-field input:valid~label{
+    font-size: 0.9rem;
+    top:10px;
+    transform: translateY(-120%);
+    }
+    .forget{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0 35px 0;
+    color:black;
+    }
+    #remember{
+    
+    accent-color:unset;
+    }
+    .forget label{
+    display: flex;
+    align-items: center;
+    }
+    .forget label p{
+    margin-left: 8px;
+    }
+    .wrapper a{
+    color:black;
+    text-decoration: underline;
+    }
+     button{
+        background:local;
+        color:black;
+        font-weight: 600;
+        border: none;
+        padding: 12px 20px;
+        cursor: pointer;
+        border-radius: 3px;
+        font-size: 16px;
+        border: 2px;
+        transition: 0.3s ease;
+     }
+     .register{
+    
+        text-align: center;
+        margin-top: 30px;
+        color:black;
+     }
+    
